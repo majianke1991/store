@@ -1,0 +1,137 @@
+body {
+  background-color: snow;
+}
+.aboutUs {
+  margin-top: 80px;
+  padding: 20px 0;
+}
+.aboutUs .aboutUs-title {
+  position: relative;
+  width: 100%;
+  height: 80px;
+  border-radius: 5px;
+  background: -webkit-linear-gradient(top, #5bc0de, #ffffff, #5bc0de, #ffffff, #5bc0de);
+  background: -moz-linear-gradient(top, #5bc0de, #ffffff, #5bc0de, #ffffff, #5bc0de);
+  background: -o-linear-gradient(top, #5bc0de, #ffffff, #5bc0de, #ffffff, #5bc0de);
+  background: -ms-linear-gradient(top, #5bc0de, #ffffff, #5bc0de, #ffffff, #5bc0de);
+  background: linear-gradient(top, #5bc0de, #ffffff, #5bc0de, #ffffff, #5bc0de);
+}
+.aboutUs .aboutUs-title p {
+  position: absolute;
+  right: 10px;
+  top: 20px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 40px;
+  color: #fff;
+  text-shadow: 5px 5px 5px #000;
+}
+.aboutUs .about-matetrip {
+  margin-top: 50px;
+}
+.aboutUs .about-matetrip #documentation-nav {
+  position: relative;
+}
+.aboutUs .about-matetrip #documentation-nav ul {
+  list-style: none;
+  width: 150px;
+  height: 160px;
+  background: -webkit-linear-gradient(left, #eeeeee, #ffffff, #eeeeee);
+  background: -moz-linear-gradient(left, #eeeeee, #ffffff, #eeeeee);
+  background: -o-linear-gradient(left, #eeeeee, #ffffff, #eeeeee);
+  background: -ms-linear-gradient(left, #eeeeee, #ffffff, #eeeeee);
+  background: linear-gradient(left, #eeeeee, #ffffff, #eeeeee);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+.aboutUs .about-matetrip #documentation-nav ul li {
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: #5bc0de;
+}
+.aboutUs .about-matetrip #documentation-nav ul li a {
+  text-decoration: none;
+  color: #5bc0de;
+}
+.aboutUs .about-matetrip #documentation-nav ul li:hover {
+  background-color: #5bc0de;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+.aboutUs .about-matetrip #documentation-nav ul li:hover a {
+  color: #fff;
+}
+.aboutUs .about-matetrip #documentation-nav ul li.active {
+  background-color: #5bc0de;
+}
+.aboutUs .about-matetrip #documentation-nav ul li.active a {
+  color: #fff;
+}
+.aboutUs .about-matetrip #documentation-nav .documentationfixed {
+  position: fixed;
+  top: 50px;
+}
+.aboutUs .about-matetrip #mycontent .matetrip-intro p {
+  font-size: 16px;
+  margin-top: 10px;
+}
+.aboutUs .about-matetrip #mycontent .matetrip-intro .matetrip-img {
+  position: relative;
+  width: 100%;
+  height: 300px;
+}
+.aboutUs .about-matetrip #mycontent .matetrip-intro .matetrip-img img {
+  position: absolute;
+}
+.aboutUs .about-matetrip #mycontent .matetrip-intro .matetrip-img img:nth-child(1) {
+  left: 0;
+  top: 0;
+  width: 50%;
+  height: 50%;
+}
+.aboutUs .about-matetrip #mycontent .matetrip-intro .matetrip-img img:nth-child(2) {
+  left: 0;
+  top: 50%;
+  width: 50%;
+  height: 50%;
+}
+.aboutUs .about-matetrip #mycontent .matetrip-intro .matetrip-img img:nth-child(3) {
+  right: 0;
+  top: 0;
+  width: 50%;
+  height: 100%;
+}
+.aboutUs .about-matetrip #mycontent .department {
+  font-size: 20px;
+  margin-left: 20px;
+}
+.aboutUs .about-matetrip #mycontent .department .one-department {
+  margin-top: 10px;
+}
+.aboutUs .about-matetrip #mycontent .department .one-department ol {
+  margin-left: 20px;
+  font-size: 16px;
+}
+.aboutUs .about-matetrip #mycontent #idears,
+.aboutUs .about-matetrip #mycontent #recruit-new,
+.aboutUs .about-matetrip #mycontent #contact-matetrip {
+  margin-top: 30px;
+}
+.aboutUs .about-matetrip #mycontent .contact-matetrip .small {
+  font-size: 20px;
+}
+.aboutUs .about-matetrip #mycontent .contact-matetrip .small span {
+  font-size: 16px;
+}
+.aboutUs .about-matetrip #mycontent .contact-matetrip .barcode {
+  width: 150px;
+  height: 150px;
+  border: 3px solid #fff;
+}
+.aboutUs .about-matetrip #mycontent .contact-matetrip .barcode img {
+  width: 100%;
+  height: 100%;
+}
