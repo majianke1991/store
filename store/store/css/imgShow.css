@@ -1,0 +1,67 @@
+body .imgShow {
+  margin-top: 80px;
+}
+body .imgShow .show-one {
+  background-color: #FFFAFA;
+  margin-top: 50px;
+}
+body .imgShow .show-one #imgShow1 {
+  margin: 10px 0;
+  width: 430px;
+  height: 300px;
+}
+body .imgShow .show-one #imgShow1 .carousel-indicators {
+  bottom: 15px;
+}
+body .imgShow .show-one #imgShow1 .carousel-indicators li {
+  width: 20px;
+  height: 20px;
+  background-color: #000;
+}
+body .imgShow .show-one #imgShow1 .carousel-indicators li.active {
+  background-color: #fff;
+}
+body .imgShow .show-one #imgShow1 .carousel-inner .item img {
+  width: 100%;
+  height: 300px;
+}
+body .imgShow .show-one #imgShow2 {
+  margin: 10px 0;
+  width: 400px;
+  height: 480px;
+}
+body .imgShow .show-one #imgShow2 .carousel-indicators {
+  bottom: 15px;
+}
+body .imgShow .show-one #imgShow2 .carousel-indicators li {
+  width: 20px;
+  height: 20px;
+  background-color: #000;
+}
+body .imgShow .show-one #imgShow2 .carousel-indicators li.active {
+  background-color: #fff;
+}
+body .imgShow .show-one #imgShow2 .carousel-inner .item img {
+  width: 400px;
+  height: 480px;
+}
+body .imgShow .show-one #imgShow3 {
+  margin: 10px 0;
+  width: 430px;
+  height: 300px;
+}
+body .imgShow .show-one #imgShow3 .carousel-indicators {
+  bottom: 15px;
+}
+body .imgShow .show-one #imgShow3 .carousel-indicators li {
+  width: 20px;
+  height: 20px;
+  background-color: #000;
+}
+body .imgShow .show-one #imgShow3 .carousel-indicators li.active {
+  background-color: #fff;
+}
+body .imgShow .show-one #imgShow3 .carousel-inner .item img {
+  width: 100%;
+  height: 300px;
+}

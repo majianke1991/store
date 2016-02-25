@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+.clearfix:after {
+  display: block;
+  content: '';
+  visibility: hidden;
+  font-size: 0;
+  clear: both;
+  height: 0;
+}
+.clearfix {
+  zoom: 1;
+}
+body {
+  background-color: snow;
+}
+body .mes .oneMes {
+  margin-top: 80px;
+  padding: 20px 10px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+body .mes .oneMes .mes-main-title .media .media-left .main-img {
+  display: block;
+  width: 106px;
+  height: 106px;
+  border: 3px solid #fff;
+}
+body .mes .oneMes .mes-main-title .media .media-left .main-img .media-object {
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+}
+body .mes .oneMes .mes-main-title .media .media-left .mes-name {
+  width: 106px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+}
+body .mes .oneMes .mes-main-title .media .media-body .mes-content {
+  line-height: 1.4;
+}
+body .mes .oneMes .mes-main-title .time-comment {
+  text-align: right;
+}
+body .mes .oneMes .mes-main-title .time-comment .time {
+  margin-right: 20px;
+}
+body .mes .oneMes .mes-main-title .reply-box .input-box {
+  width: 100%;
+  margin: 0 auto;
+}
+body .mes .oneMes .mes-main-title .reply-box .about-comment {
+  display: none;
+}
+body .mes .oneMes .mes-main-title .reply-box .about-comment .textArea-box {
+  width: 100%;
+  margin: 0 auto;
+  height: 50px;
+  resize: none;
+  padding: 3px 1%;
+  overflow-y: auto;
+}
+body .mes .oneMes .mes-main-title .reply-box .about-comment .publish {
+  width: 80px;
+  height: 30px;
+  border: none;
+  background-color: #00b3ee;
+  color: #fff;
+  border-radius: 3px;
+  float: right;
+}
+body .mes .oneMes .mes-detail {
+  margin-left: 20px;
+  margin-top: 20px;
+}
+body .mes .oneMes .mes-detail .mes-one-reply {
+  margin-top: 10px;
+}
+body .mes .oneMes .mes-detail .mes-one-reply .media .media-left .reply-img {
+  display: block;
+  width: 100px;
+  height: 50px;
+  padding: 0 25px;
+}
+body .mes .oneMes .mes-detail .mes-one-reply .media .media-left .reply-img .media-object {
+  width: 50px;
+  height: 50px;
+}
+body .mes .oneMes .mes-detail .mes-one-reply .media .media-left .mes-name {
+  width: 100px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+}
+body .mes .oneMes .mes-detail .mes-one-reply .media .media-body .mes-content {
+  line-height: 1.4;
+}
+body .mes .oneMes .mes-detail .mes-one-reply .time-reply {
+  text-align: right;
+}
+body .mes .oneMes .mes-detail .mes-one-reply .time-reply .time {
+  margin-right: 20px;
+}
+body .mes .oneMes .mes-detail .mes-one-reply .other-reply {
+  margin-left: 60px;
+}
+body .mes .oneMes .mes-detail .mes-one-reply .other-reply .mes-other-reply .belong-oneMes .one-reply-one {
+  float: left;
+}
+body .mes .oneMes .mes-detail .mes-one-reply .other-reply .mes-other-reply .belong-oneMes .one-reply-one p a:nth-child(1) {
+  margin-right: 5px;
+}
+body .mes .oneMes .mes-detail .mes-one-reply .other-reply .mes-other-reply .belong-oneMes .one-reply-one p a:nth-child(2) {
+  margin-left: 5px;
+}
+body .mes .oneMes .mes-detail .mes-one-reply .other-reply .mes-other-reply .belong-oneMes .reply-right {
+  float: left;
+}

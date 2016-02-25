@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.searchPass {
+  width: 100%;
+  background: url(../img/8.large.jpg) left top;
+}
+.searchPass .search-box {
+  position: absolute;
+  width: 300px;
+  height: 400px;
+  left: 50%;
+  top: 50%;
+  margin-left: -150px;
+  margin-top: -170px;
+  background: #fff;
+  -webkit-box-shadow: 0 0 5px 5px #000;
+  -moz-box-shadow: 0 0 5px 5px #000;
+  box-shadow: 0 0 5px 5px #000;
+}
+.searchPass .search-box .info {
+  border: none;
+  display: block;
+  margin-left: 10px;
+  width: 270px;
+  height: 31px;
+  padding-left: 5px;
+  margin-top: 20px;
+  border: 1px solid #333;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+.searchPass .search-box .verification-code {
+  position: relative;
+  width: 270px;
+  height: 31px;
+  margin-left: 10px;
+  background-color: red;
+  margin-top: 20px;
+}
+.searchPass .search-box .verification-code .code {
+  position: absolute;
+  left: 0;
+  top: 0;
+  border: none;
+  display: block;
+  width: 270px;
+  height: 100%;
+  border: 1px solid #333;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+.searchPass .search-box .verification-code .getCode {
+  cursor: default;
+  position: absolute;
+  display: block;
+  height: 30px;
+  line-height: 30px;
+  right: 0;
+  top: 0;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  /* background-color: #000;*/
+  background: -webkit-linear-gradient(top, #000000, #ffffff, #000000);
+  background: -moz-linear-gradient(top, #000000, #ffffff, #000000);
+  background: -o-linear-gradient(top, #000000, #ffffff, #000000);
+  background: -ms-linear-gradient(top, #000000, #ffffff, #000000);
+  background: linear-gradient(top, #000000, #ffffff, #000000);
+  color: #000;
+  font-weight: bold;
+}
+.searchPass .search-box .sure-search {
+  letter-spacing: 4px;
+  width: 280px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  background: -webkit-linear-gradient(top, #000000, #ffffff, #000000);
+  background: -moz-linear-gradient(top, #000000, #ffffff, #000000);
+  background: -o-linear-gradient(top, #000000, #ffffff, #000000);
+  background: -ms-linear-gradient(top, #000000, #ffffff, #000000);
+  background: linear-gradient(top, #000000, #ffffff, #000000);
+  color: #000;
+  font-weight: bold;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  margin: 30px auto;
+  cursor: pointer;
+}
+.searchPass .search-box .matetrip-logo {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  left: 50%;
+  margin-left: -50px;
+  top: -130px;
+}
+.searchPass .search-box .matetrip-logo img {
+  width: 100%;
+  height: 100%;
+}
+.searchPass .search-box .forgetPass {
+  width: 100%;
+  text-align: center;
+  margin-top: 60px;
+}
