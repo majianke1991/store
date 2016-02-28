@@ -24,6 +24,18 @@
         <location>/global/sessionExpired.jsp</location>
     </error-page>
 	-->
+		<filter>
+	<filter-name>StrategyFilter</filter-name>	
+	<filter-class>filter.StrategyFilter</filter-class>
+	</filter> 
+	<filter-mapping>
+		<filter-name>StrategyFilter</filter-name>
+		<url-pattern>/pages/strategy.jsp</url-pattern>
+		<dispatcher>INCLUDE</dispatcher>
+		<dispatcher>REQUEST</dispatcher>
+	</filter-mapping>
+	
+	
 	
   <servlet>
     <servlet-name>LoginServlet</servlet-name>
@@ -38,15 +50,22 @@
     <servlet-name>Logout</servlet-name>
     <servlet-class>servlets.Logout</servlet-class>
 	</servlet>
+	
 	<servlet>
     <servlet-name>UploadServlet</servlet-name>
     <servlet-class>
       servlets.UploadServlet
     </servlet-class> 
-	</servlet> 
+    <init-param>
+    	<param-name>uploadPath</param-name>
+    	<param-value>C:\\Users\\Administrator.USER-20140816TV\\Desktop\\workdemo\\apache-tomcat-6.0.39\\webapps\\store\\customerData</param-value>
+    </init-param>
+	</servlet>
+	
 	
  <servlet-mapping>
     <servlet-name>UploadServlet</servlet-name>
+    <url-pattern>/store/UploadServlet</url-pattern>
     <url-pattern>/UploadServlet</url-pattern>
   </servlet-mapping>
  <servlet-mapping>
