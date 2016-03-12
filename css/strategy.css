@@ -2,8 +2,12 @@
   margin-top: 80px;
   padding: 20px 0;
 }
+
 .strategy .one-strategy-show {
   margin-top: 100px;
+}
+.strategy .one-strategy-show:nth-child(1) {
+  margin-top: 20px;
 }
 .strategy .one-strategy-show .one-strategy-intro {
   width: 100%;

@@ -15,9 +15,9 @@
   margin-left: -150px;
   margin-top: -170px;
   background: #fff;
-  -webkit-box-shadow: 0 0 5px 5px #000;
-  -moz-box-shadow: 0 0 5px 5px #000;
-  box-shadow: 0 0 5px 5px #000;
+  -webkit-box-shadow: 0 0 5px 5px #666666;
+  -moz-box-shadow: 0 0 5px 5px #666666;
+  box-shadow: 0 0 5px 5px #666666;
 }
 .login .login-box input {
   border: none;
@@ -38,12 +38,8 @@
   line-height: 30px;
   text-align: center;
   letter-spacing: 4px;
-  background: -webkit-linear-gradient(top, #000000, #ffffff, #000000);
-  background: -moz-linear-gradient(top, #000000, #ffffff, #000000);
-  background: -o-linear-gradient(top, #000000, #ffffff, #000000);
-  background: -ms-linear-gradient(top, #000000, #ffffff, #000000);
-  background: linear-gradient(top, #000000, #ffffff, #000000);
-  color: #000;
+  background-color: #666666;
+  color: #fff;
   font-weight: bold;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -72,7 +68,7 @@
   width: 100%;
   text-align: center;
   margin-top: 20px;
-  color: #000;
+  color: #666666;
   font-size: 30px;
 }
 .login .login-box .toRegist {

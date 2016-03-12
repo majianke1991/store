@@ -5,8 +5,7 @@
 <title>Title</title>
 <link rel="stylesheet"
 	href="../../bootstrap-3.3.5/dist/css/bootstrap.min.css">
-<link rel="stylesheet/less" href="../css/strategy.less">
-<script src="../js/less.js"></script>
+<link rel="stylesheet/less" href="../css/strategy.css">
 <script src="../js/jquery-1.11.2.js"></script>
 <script src="../../bootstrap-3.3.5/dist/js/bootstrap.min.js"></script>
 <!--<script src="../myjs/index.js"></script>-->

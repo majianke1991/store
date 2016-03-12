@@ -23,7 +23,7 @@ body .navbar-header .my-navbar-toggle {
   margin-top: 20px;
 }
 body .navbar-header .navbar-brand {
-  color: #58A6F0;
+  color: #fff;
   font-size: 40px;
   font-style: italic;
   margin-right: 20px;
@@ -47,7 +47,7 @@ body .my-navbar #my-navbar {
   background-color: #222;
 }
 body .my-navbar #my-navbar .my-fun-nav li:hover {
-  background-color: #00b3ee;
+  background-color: #275e97;
 }
 body .my-navbar #my-navbar .my-fun-nav li:hover a {
   color: #fff;
@@ -60,10 +60,10 @@ body .my-navbar #my-navbar a {
   line-height: 40px;
 }
 body .my-navbar #my-navbar a:hover {
-  color: #00b3ee;
+  color: #275e97;
 }
 body .my-navbar #my-navbar .my-fun-nav li.active a {
-  background-color: #00b3ee;
+  background-color: #275e97;
 }
 body .my-navbar #my-navbar .my-fun-nav li.active a:hover {
   color: #fff;
@@ -110,18 +110,22 @@ body .ajaxPage .myCarousel .carousel-inner .item .carousel-caption {
 }
 body .ajaxPage #intro {
   padding: 50px 0;
-  background-color: snow;
+  background-color: #fff;
+  color: #666;
 }
 body .ajaxPage #intro .small {
   font-size: 20px;
-  opacity: 0.5;
 }
 body .ajaxPage #activity-recent {
   padding: 50px 0;
-  background-color: #5bc0de;
+  background-color: #275e97;
+  color: #eee;
 }
 body .ajaxPage #activity-recent .one-activity {
   margin-top: 40px;
+  padding: 15px 10px;
+  border: 1px solid #ededed;
+  background-color: #fff;
 }
 body .ajaxPage #activity-recent .one-activity .col-xs-12 .activity-detail {
   margin-top: 20px;
@@ -147,7 +151,7 @@ body .ajaxPage #activity-recent .one-activity .activity-imgLeft .activity-isOpen
   height: 25px;
   line-height: 25px;
   text-align: center;
-  background-color: red;
+  background-color: #ce1126;
   color: #fff;
   left: -5px;
   top: 20px;
@@ -157,19 +161,37 @@ body .ajaxPage #activity-recent .one-activity .activity-imgLeft .activity-isOpen
   -o-transform: rotate(-50deg);
   transform: rotate(-50deg);
 }
+body .ajaxPage #activity-recent .one-activity .activity-imgLeft .activity-theme {
+  position: absolute;
+  width: 100%;
+  height: 30px;
+  overflow: hidden;
+  line-height: 30px;
+  background-color: #000;
+  opacity: 0.5;
+  text-align: center;
+  bottom: 0;
+  left: 0;
+  color: #fff;
+  -webkit-border-radius: 0 0 5px 5px;
+  -moz-border-radius: 0 0 5px 5px;
+  border-radius: 0 0 5px 5px;
+}
 body .ajaxPage #activity-recent .activity-detail .activity-time,
 body .ajaxPage #activity-recent .activity-detail .activity-budget {
   font-size: 20px;
+  color: #666;
 }
 body .ajaxPage #activity-recent .activity-detail .activity-explain {
-  font-size: 16px;
+  color: #666;
 }
 body .ajaxPage #members {
   padding: 50px 0;
-  background-color: #5bc0de;
+  background-color: #fff;
+  color: #666;
 }
 body .ajaxPage #members .container .col-md-6 {
-  padding: 20px 0;
+  padding: 20px;
 }
 body .ajaxPage #members .small {
   font-size: 16px;
@@ -185,7 +207,8 @@ body .ajaxPage #members .media-object {
 }
 body .ajaxPage #strategy {
   padding: 50px 0;
-  background-color: snow;
+  background-color: #fff;
+  color: #666;
 }
 body .ajaxPage #strategy .one-strategy {
   position: relative;
@@ -223,9 +246,89 @@ body .ajaxPage #strategy .one-strategy:nth-child(even):after {
   height: 0;
   clear: both;
 }
+body .ajaxPage #travel-sharing-party {
+  padding: 50px 0;
+  background-color: #275e97;
+  color: #eee;
+}
+
+body .ajaxPage #travel-sharing-party .one-sharing-party {
+  margin: 40px 0 10px 3px;
+}
+body .ajaxPage #travel-sharing-party .one-sharing-party .article {
+  border: 1px solid #ededed;
+  background: #fff;
+  padding: 10px 25px 10px 20px;
+  position: relative;
+  overflow: visible;
+}
+body .ajaxPage #travel-sharing-party .one-sharing-party .article:hover {
+  border-color: #ccc;
+  box-shadow: 0 0 3px #ccc;
+}
+body .ajaxPage #travel-sharing-party .one-sharing-party .article h4 {
+  float: left;
+  max-width: 460px;
+}
+body .ajaxPage #travel-sharing-party .one-sharing-party .article h4 a {
+  color: #333;
+  text-decoration: none;
+}
+body .ajaxPage #travel-sharing-party .one-sharing-party .article h4 a:hover {
+  color: #5bc0de;
+}
+body .ajaxPage #travel-sharing-party .one-sharing-party .article .img {
+  float: right;
+  height: 110px;
+  overflow: hidden;
+  width: 160px;
+  list-style: none;
+}
+body .ajaxPage #travel-sharing-party .one-sharing-party .article .img li a {
+  color: #333;
+  text-decoration: none;
+}
+body .ajaxPage #travel-sharing-party .one-sharing-party .article .img li a img {
+  height: 110px;
+  width: 160px;
+  border: none;
+  display: block;
+  vertical-align: middle;
+}
+body .ajaxPage #travel-sharing-party .one-sharing-party .article .brief {
+  float: left;
+  max-width: 460px;
+  color: #666;
+  padding: 12px 10px 12px 0;
+  line-height: 20px;
+  zoom: 1;
+}
+body .ajaxPage #travel-sharing-party .one-sharing-party .article .brief a {
+  display: inline-block;
+  text-decoration: none;
+}
+body .ajaxPage #travel-sharing-party .one-sharing-party .article .info {
+  list-style: none;
+  max-width: 460px;
+}
+body .ajaxPage #travel-sharing-party .one-sharing-party .article .info li {
+  min-width: 100px;
+  padding: 3px 10px;
+  float: left;
+  color: #666;
+}
+
+
+
+
+
+
+
+
 body .ajaxPage #contact {
   padding: 50px 0;
-  background-color: snow;
+  background-color: #275e97;
+  color: #eee;
 }
 body .ajaxPage #contact .small {
   font-size: 20px;
@@ -239,3 +342,42 @@ body .ajaxPage #contact .barcode img {
   width: 100%;
   height: 100%;
 }
+
+body .ajaxPage #copyright {
+  background-color: #000;
+  height: 50px;
+  line-height: 50px;
+  color: rgb(51, 51, 51);
+}
+
+body .ajaxPage #copyright ul {
+  list-style: none;
+  hwight: 20px;
+  line-height: 20px;
+  margin-top: 15px;
+}
+
+body .ajaxPage #copyright ul li {
+  display: inline-block;
+  padding: 0 10px;
+  border-left: 1px solid;
+}
+
+body .ajaxPage #copyright ul li a {
+  color: rgb(51, 51, 51);
+}
+
+body .ajaxPage #copyright ul li a:hover {
+  color: #ce1126;
+}
+
+body .ajaxPage #copyright ul li:first-child {
+  border: none;
+}
+
+.text-length-limit {
+  color: #666;
+  text-indent: 2em;
+}
+
+

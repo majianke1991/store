@@ -1,0 +1,36 @@
+body {
+  background-color: #fff;
+  color: #666;
+}
+body .singStrategy {
+  padding: 20px 0;
+}
+body .singStrategy .container .strategy-title {
+  text-align: center;
+  font-size: 30px;
+}
+body .singStrategy .container .strategy-small-title {
+  text-align: right;
+  font-size: 20px;
+}
+body .singStrategy .container .strategy-small-title .strategy-author {
+  margin-left: 10px;
+}
+body .singStrategy .container .strategy-small-title .strategy-time {
+  margin-left: 20px;
+}
+body .singStrategy .container .strategy-more {
+  text-align: right;
+  font-size: 14px;
+}
+body .singStrategy .container .strategy-text {
+  font-size: 16px;
+  line-height: 1.6;
+}
+body .singStrategy .container .strategy-img {
+  display: block;
+  max-width: 80%;
+  height: auto;
+  margin: 10px 0;
+  margin-left: 10%;
+}

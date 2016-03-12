@@ -4,17 +4,14 @@ body {
 .aboutUs {
   margin-top: 80px;
   padding: 20px 0;
+  background-color: #fff;
 }
 .aboutUs .aboutUs-title {
   position: relative;
   width: 100%;
   height: 80px;
   border-radius: 5px;
-  background: -webkit-linear-gradient(top, #5bc0de, #ffffff, #5bc0de, #ffffff, #5bc0de);
-  background: -moz-linear-gradient(top, #5bc0de, #ffffff, #5bc0de, #ffffff, #5bc0de);
-  background: -o-linear-gradient(top, #5bc0de, #ffffff, #5bc0de, #ffffff, #5bc0de);
-  background: -ms-linear-gradient(top, #5bc0de, #ffffff, #5bc0de, #ffffff, #5bc0de);
-  background: linear-gradient(top, #5bc0de, #ffffff, #5bc0de, #ffffff, #5bc0de);
+  background-color: #666666;
 }
 .aboutUs .aboutUs-title p {
   position: absolute;
@@ -24,7 +21,6 @@ body {
   line-height: 30px;
   font-size: 40px;
   color: #fff;
-  text-shadow: 5px 5px 5px #000;
 }
 .aboutUs .about-matetrip {
   margin-top: 50px;
@@ -36,11 +32,7 @@ body {
   list-style: none;
   width: 150px;
   height: 160px;
-  background: -webkit-linear-gradient(left, #eeeeee, #ffffff, #eeeeee);
-  background: -moz-linear-gradient(left, #eeeeee, #ffffff, #eeeeee);
-  background: -o-linear-gradient(left, #eeeeee, #ffffff, #eeeeee);
-  background: -ms-linear-gradient(left, #eeeeee, #ffffff, #eeeeee);
-  background: linear-gradient(left, #eeeeee, #ffffff, #eeeeee);
+  background-color: #eee;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
@@ -49,14 +41,14 @@ body {
   height: 40px;
   line-height: 40px;
   text-align: center;
-  color: #5bc0de;
+  color: #275e97;
 }
 .aboutUs .about-matetrip #documentation-nav ul li a {
   text-decoration: none;
-  color: #5bc0de;
+  color: #275e97;
 }
 .aboutUs .about-matetrip #documentation-nav ul li:hover {
-  background-color: #5bc0de;
+  background-color: #275e97;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
@@ -65,7 +57,7 @@ body {
   color: #fff;
 }
 .aboutUs .about-matetrip #documentation-nav ul li.active {
-  background-color: #5bc0de;
+  background-color: #275e97;
 }
 .aboutUs .about-matetrip #documentation-nav ul li.active a {
   color: #fff;

@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>单独的一个strategy页面</title>
     <link rel="stylesheet" href="../../bootstrap-3.3.5/dist/css/bootstrap.min.css">
-    <link rel="stylesheet/less" href="../css/singleStrategy.less">
-    <script src="../js/less.js"></script>
+    <link rel="stylesheet/less" href="../css/singleStrategy.css">
     <script src="../js/jquery-1.11.2.js"></script>
     <script src="../../bootstrap-3.3.5/dist/js/bootstrap.min.js"></script>
     <script src="../myjs/singleStrategy.js"></script>

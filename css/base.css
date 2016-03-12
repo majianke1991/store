@@ -1,0 +1,18 @@
+@CHARSET "UTF-8";
+.back-top {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	width: 100px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	background-color: #ce1126;
+	color: #fff;
+}
+
+.back-top:focus, .back-top:hover, .back-top:active {
+	background-color: #000!important;
+	text-decoration: none !important;
+	color: #fff!important;
+}

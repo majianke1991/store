@@ -1,0 +1,31 @@
+body {
+    background-color: #fff;
+    color: #666;
+}
+
+body .activityDetail {
+    padding: 20px 0;
+}
+
+.activityDetail .activity-title {
+    font-size: 30px;
+}
+
+.activityDetail .activity-others {
+    padding: 20px 0;
+}
+
+.activityDetail .activity-time,.activityDetail .activity-place {
+    font-size: 20px;
+}
+
+.activityDetail .activity-theme-img {
+    width: 100%;
+    max-height: 300px;
+}
+
+.activity-content {
+    font-size: 16px;
+    line-height: 1.6;
+    text-indent: 2em;
+}

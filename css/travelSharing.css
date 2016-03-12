@@ -1,0 +1,143 @@
+@CHARSET "UTF-8";
+#travelSharing {
+	padding-bottom: 100px;
+}
+#travelSharing > .row {
+	margin-top: 81px;
+}
+#travelSharing .one-sharing-party {
+	margin: 40px 0 10px 3px;
+}
+
+#travelSharing .one-sharing-party.article {
+	border: 1px solid #ededed;
+	background: #fff;
+	padding: 10px 25px 10px 20px;
+	position: relative;
+	overflow: visible;
+}
+
+#travelSharing .one-sharing-party.article:hover {
+	border-color: #ccc;
+	box-shadow: 0 0 3px #ccc;
+}
+
+#travelSharing .one-sharing-party.article h4 {
+	float: left;
+	width: 460px;
+}
+
+#travelSharing .one-sharing-party.article h4 a {
+	color: #333;
+	text-decoration: none;
+}
+
+#travelSharing .one-sharing-party.article h4 a:hover {
+	color: #5bc0de;
+}
+
+#travelSharing .one-sharing-party.article .img {
+	float: right;
+	height: 110px;
+	overflow: hidden;
+	width: 160px;
+	list-style: none;
+}
+
+#travelSharing .one-sharing-party.article .img li a {
+	color: #333;
+	text-decoration: none;
+}
+#travelSharing .one-sharing-party.article .img li a img {
+	height: 110px;
+	width: 160px;
+	border: none;
+	display: block;
+	vertical-align: middle;
+}
+
+#travelSharing .one-sharing-party.article .brief {
+	float: left;
+	width: 460px;
+	color: #666;
+	padding: 12px 10px 12px 0;
+	line-height: 20px;
+	zoom: 1;
+}
+
+#travelSharing .one-sharing-party.article .brief a {
+	display: inline-block;
+	color: #275e97;
+	text-decoration: none;
+}
+
+#travelSharing .one-sharing-party.article .info {
+	list-style: none;
+	width: 460px;
+}
+
+#travelSharing .one-sharing-party.article .info li {
+	min-width: 100px;
+	padding: 3px 10px;
+	float: left;
+}
+
+
+
+/*right start*/
+.sharing-img-right {
+	margin-top: 40px;
+	position: relative;
+	width: 132px;
+	height: 400px;
+}
+
+.sharing-img-right .sharing-img-one {
+	list-style: none;
+	width: 132px;
+	height: 400px;
+	overflow: hidden;
+}
+
+.sharing-img-right .btn-direction {
+	width: 50px;
+	height: 45px;
+	background: pink url('../img/prev.png') no-repeat;
+	position: absolute;
+	left: 50%;
+	margin-left: -25px;
+	z-index: 100;
+	top: 0;
+	opacity: 0.5;
+	cursor: pointer;
+}
+
+.sharing-img-right .btn-up {
+	top: 0;
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+	transform: rotate(90deg);
+}
+
+.sharing-img-right .btn-down {
+	top: 355px;
+	-webkit-transform: rotate(270deg);
+	-moz-transform: rotate(270deg);
+	-ms-transform: rotate(270deg);
+	-o-transform: rotate(270deg);
+	transform: rotate(270deg);
+}
+
+.sharing-img-right .sharing-img-one li {
+	width: 132px;
+	height: 80px;
+}
+
+
+
+.sharing-img-right .sharing-img-one li img {
+	width: 132px;
+	height: 80px;
+}

@@ -16,14 +16,27 @@ ul {
 .clearfix {
   zoom: 1;
 }
-body {
-  background-color: snow;
+.messageLeave {
+  background-color: #fff;
+  padding-bottom: 100px;
+  color: #666;
+}
+
+.messageLeave a {
+  color:#275e97;
+  font-weight: 500;
+}
+.messageLeave a:hover {
+  color:#275e97;
 }
 body .mes .oneMes {
   margin-top: 80px;
   padding: 20px 10px;
-  background-color: #fff;
   border-radius: 5px;
+  border: 1px solid #275e97;
+}
+body .mes .oneMes:nth-child(1) {
+  margin-top: 120px;
 }
 body .mes .oneMes .mes-main-title .media .media-left .main-img {
   display: block;
@@ -34,7 +47,7 @@ body .mes .oneMes .mes-main-title .media .media-left .main-img {
 body .mes .oneMes .mes-main-title .media .media-left .main-img .media-object {
   width: 100px;
   height: 100px;
-  border-radius: 5px;
+  border-radius: 100%;
 }
 body .mes .oneMes .mes-main-title .media .media-left .mes-name {
   width: 106px;
@@ -61,7 +74,7 @@ body .mes .oneMes .mes-main-title .reply-box .about-comment {
 body .mes .oneMes .mes-main-title .reply-box .about-comment .textArea-box {
   width: 100%;
   margin: 0 auto;
-  height: 50px;
+  height: 60px;
   resize: none;
   padding: 3px 1%;
   overflow-y: auto;
@@ -70,7 +83,7 @@ body .mes .oneMes .mes-main-title .reply-box .about-comment .publish {
   width: 80px;
   height: 30px;
   border: none;
-  background-color: #00b3ee;
+  background-color: #275e97;
   color: #fff;
   border-radius: 3px;
   float: right;
@@ -91,6 +104,7 @@ body .mes .oneMes .mes-detail .mes-one-reply .media .media-left .reply-img {
 body .mes .oneMes .mes-detail .mes-one-reply .media .media-left .reply-img .media-object {
   width: 50px;
   height: 50px;
+  border-radius: 100%;
 }
 body .mes .oneMes .mes-detail .mes-one-reply .media .media-left .mes-name {
   width: 100px;
@@ -122,3 +136,8 @@ body .mes .oneMes .mes-detail .mes-one-reply .other-reply .mes-other-reply .belo
 body .mes .oneMes .mes-detail .mes-one-reply .other-reply .mes-other-reply .belong-oneMes .reply-right {
   float: left;
 }
+
+.right-others {
+  margin-top: 120px;
+}
+

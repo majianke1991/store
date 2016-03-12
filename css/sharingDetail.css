@@ -1,0 +1,31 @@
+body {
+    background-color: #fff;
+    color: #666;
+}
+
+body .sharingDetail {
+    padding: 20px 0;
+}
+
+.sharingDetail .sharing-title {
+    font-size: 30px;
+}
+
+.sharingDetail .sharing-others {
+    padding: 20px 0;
+}
+
+.sharingDetail .sharing-time,.sharingDetail .sharing-place {
+    font-size: 20px;
+}
+
+.sharingDetail .sharing-theme-img {
+    width: 100%;
+    max-height: 300px;
+}
+
+.sharing-content {
+    font-size: 16px;
+    line-height: 1.6;
+    text-indent: 2em;
+}

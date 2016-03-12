@@ -1,0 +1,467 @@
+@CHARSET "UTF-8";
+.clearfix:after {
+	content: "";
+	visibility: hidden;
+	display: block;
+	font-size:0;
+	clear: both;
+	height: 0;
+}
+
+.clearfix {
+	zoom: 1;
+}
+.adverse-img {
+	width: 100%;
+	height: 80px;
+	line-height: 80px;
+	margin-top: 101px;
+	text-align: center;
+	font-size: 30px;
+	background: url('../img/info.png') repeat-x;
+}
+
+.myAccount {
+	margin-top: 0;
+	box-sizing: border-box;
+	padding-bottom: 50px;
+}
+
+.myAccount-detail {
+	background-color: #e0e0e0;
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+}
+
+.myAccount-detail .col-md-4 {
+	height: 100%;
+	margin-bottom: -9999px;
+	padding-bottom: 9999px;
+}
+
+.myAccount-detail .col-md-8 {
+	background-color: #fff;
+	padding-bottom: 30px;
+	margin-bottom: -9999px;
+	padding-bottom: 9999px;
+}
+
+.myAccount-detail .myphoto{
+	z-index: 2;
+	width: 150px;
+	height: 150px;
+	border: 3px solid #fff;
+	border-radius: 100%;
+	position: absolute;
+	top: 0;
+	left: 15px;
+	overflow: hidden;
+}
+
+.myAccount-detail .myname {
+	float: left;
+	margin-left: 160px;
+	margin-top: 50px;
+	font-size: 16px;
+}
+
+.myAccount-detail .myname a {
+	color: #275e97;
+	font-weight: 600;
+}
+
+.myAccount-detail .myphoto img {
+	width: 144px;
+	height: 144px;
+	border-radius: 100%;
+	overflow: hidden;
+}
+
+.myAccount-detail .myphoto .upload-photo {
+	position: absolute;
+	border: none;
+	width: 144px;
+	height: 50px;
+	line-height: 50px;
+	bottom: 0;
+	left: 50%;
+	margin-left: -72px;
+	background-color: #275e97;
+	text-align: center;
+	color: #fff;
+}
+
+.myAccount-detail .myphoto .upload-photo input[type=file] {
+	position: absolute;
+	opacity: 0;
+}
+
+.myAccount-detail .myphoto .upload-photo:hover {
+	text-decoration: none;
+}
+
+.myAccount-detail .nav-myAccount {
+	margin-top: 150px;
+	list-style: none;
+	padding-bottom: 50px;
+	padding-left: 50px;
+}
+
+.myAccount-detail .nav-myAccount li {
+	width: 60%;
+	padding: 10px 10%;
+	background-color: #275e97;
+	color: #fff;
+	border: 1px solid #fff;
+	text-align: center;
+}
+
+.myAccount-detail .nav-myAccount li:hover {
+	background-color: #000;
+}
+
+.myAccount-detail .nav-myAccount li a {
+	text-decoration: none;
+	color: #fff;
+}
+
+/* .myAccount-detail .nav-myAccount li a:before {
+	content: "\f105";
+    font-family: FontAwesome;
+    display: inline-block;
+    font-size: 20px;
+    line-height: 20px;
+    top: 1px;
+    margin-right: 5px;
+    position: relative;
+    color: #ce1126;
+} */
+
+.myAccount-detail .nav-myAccount li a:hover {
+	color: #fff;
+}
+
+
+
+
+
+/*right*/
+.myAccount-detail .myAccount-title {
+	margin-top: 40px;
+	width: 80px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	border-bottom: 2px solid #ce1126;
+}
+
+/*myAccountStrategy*/
+.myAccount-detail .myStrategy .myStrategy-detail {
+	margin-top: 20px;
+}
+
+.myAccount-detail .myStrategy .myStrategy-detail .strategy-detail-table tbody td a{
+	color: #000;
+}
+
+.myAccount-detail .myStrategy .myStrategy-detail .strategy-detail-table tbody td a.delete {
+	color: #ce1126;
+}
+
+
+/*myAccountProfile*/
+.myAccount-detail .myProfile .myProfile-detail {
+	margin-top: 20px;
+	margin-left: 50px;
+}
+
+.myAccount-detail .myProfile .myProfile-detail .base-profile,
+.myAccount-detail .myProfile .myProfile-detail .base-profile-password {
+	list-style: none;
+}
+
+.myAccount-detail .myProfile .myProfile-detail .base-profile li,
+.myAccount-detail .myProfile .myProfile-detail .base-profile-password li {
+	height: 50px;
+	padding: 10px 0;
+}
+
+.myAccount-detail .myProfile .myProfile-detail .base-profile li strong {
+	display: inline-block;
+	width: 80px;
+}
+
+.myAccount-detail .myProfile .myProfile-detail .base-profile li input,
+.myAccount-detail .myProfile .myProfile-detail .base-profile-password li input {
+	border: none;
+	padding: 3px 5px;
+	background-color: #eee;
+}
+
+.myAccount-detail .myProfile .myProfile-detail .base-profile li>input[type=radio]:nth-child(odd) {
+	margin-left: 20px;
+}
+
+.myAccount-detail .myProfile .myProfile-detail .save-profile {
+	padding-bottom: 30px;
+}
+
+.myAccount-detail .myProfile .myProfile-detail .save-profile .btn-primary {
+	padding: 5px 10px;
+	background-color: #ce1126;
+	margin-left: 40px;
+	margin-top: 10px;
+	border: none;
+}
+.myAccount-detail .myProfile .myProfile-detail .change-password {
+	margin-left: 80px;
+	height: 30px;
+	line-height: 30px;
+}
+
+
+/*myActivityManage*/
+.activity-manage p.pull-right .btn-primary {
+	padding: 5px 10px;
+	background-color: #ce1126;
+	border: none;
+}
+
+.myAccount-detail .activity-manage .activity-manage-detail {
+	margin-top: 20px;
+}
+
+.myAccount-detail .activity-manage .activity-manage-detail .activity-detail-table td a {
+	color: #ce1126;
+}
+
+
+/*edit: popup*/
+.popup-activity-edit {
+	width: 500px;
+	padding: 20px 10px;
+	background-color: #fff;
+	position: fixed;
+	z-index: 100;
+	left: 50%;
+	margin-left: -250px;
+	top: 50px;
+	border: 3px solid #eee;
+}
+
+.popup-activity-edit .popup-activity-datail {
+	list-style: none;
+}
+
+.popup-activity-edit .popup-activity-datail li {
+	height: 50px;
+	padding: 10px 0;
+}
+
+.popup-activity-edit .popup-activity-datail li strong {
+	display: inline-block;
+	width: 80px;
+}
+
+.popup-activity-edit .popup-activity-datail li.item-theme-image {
+	position: relative;	
+	height: 120px;
+}
+
+.popup-activity-edit .popup-activity-datail li.item-theme-image strong {
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.popup-activity-edit .popup-activity-datail li input[type=text],
+.popup-activity-edit .popup-activity-datail li input[type=date] {
+	border: none;
+	padding: 3px 5px;
+	background-color: #eee;
+	width: 150px;
+}
+
+.popup-activity-edit .popup-activity-datail li .upload-theme-image {
+	cursor: pointer;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	display: inline-block;
+	width: 100px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	background-color: #000;
+	color: #fff;
+	opacity: 0.5;
+	display: none;
+}
+
+.popup-activity-edit .popup-activity-datail li input[type=file] {
+	position: absolute;
+	left: 0;
+	top: 0;
+	opacity: 0;
+	filter: alpha(opacity=0);
+}
+
+.popup-activity-edit .popup-activity-datail li .theme-image {
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	margin-left: 80px;
+}
+
+.popup--activity-edit .popup-activity-datail li .theme-image img {
+	width: 100%;
+	height: 100%;
+}
+.popup-activity-edit .popup-activity-datail li input[type=radio]:nth-child(3) {
+	margin-left: 20px;
+}
+
+.popup-activity-edit .popup-activity-datail li.popup-activity-content {
+	height: 200px;
+	padding: 10px 0;
+	position: relative;
+}
+
+.popup-activity-edit .popup-activity-datail li.popup-activity-content strong {
+	position: absolute;
+	
+}
+.popup-activity-edit .popup-activity-datail li.popup-activity-content textarea {
+	display: inline-block;
+	width: 300px;
+	height: 180px;
+	background-color: #eee;
+	border: none;
+	resize: none;
+	margin-left: 80px;
+}
+
+.popup-activity-edit .popup-activity-datail li .btn-primary {
+	padding: 5px 10px;
+	background-color: #ce1126;
+	border: none;
+}
+
+.datetimepicker2:nth-child(1) {
+	margin-left: -4px;
+}
+
+
+/*popup : sharing*/
+.popup-sharing-edit {
+	width: 500px;
+	padding: 20px 10px;
+	background-color: #fff;
+	position: fixed;
+	z-index: 100;
+	left: 50%;
+	margin-left: -250px;
+	top: 50px;
+	border: 3px solid #eee;
+}
+
+.popup-sharing-edit .popup-sharing-datail {
+	list-style: none;
+}
+
+.popup-sharing-edit .popup-sharing-datail li {
+	height: 50px;
+	padding: 10px 0;
+}
+
+.popup-sharing-edit .popup-sharing-datail li strong {
+	display: inline-block;
+	width: 110px;
+}
+
+.popup-sharing-edit .popup-sharing-datail li.item-theme-image {
+	position: relative;
+	height: 120px;
+}
+
+.popup-sharing-edit .popup-sharing-datail li.item-theme-image strong {
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.popup-sharing-edit .popup-sharing-datail li input[type=text],
+.popup-sharing-edit .popup-sharing-datail li input[type=date] {
+	border: none;
+	padding: 3px 5px;
+	background-color: #eee;
+	width: 150px;
+}
+
+.popup-sharing-edit .popup-sharing-datail li .upload-theme-image {
+	cursor: pointer;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	display: inline-block;
+	width: 100px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	background-color: #000;
+	color: #fff;
+	opacity: 0.5;
+	display: none;
+}
+
+.popup-sharing-edit .popup-sharing-datail li input[type=file] {
+	position: absolute;
+	left: 0;
+	top: 0;
+	opacity: 0;
+	filter: alpha(opacity=0);
+}
+
+.popup-sharing-edit .popup-sharing-datail li .theme-image {
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	margin-left: 110px;
+}
+
+.popup-sharing-edit .popup-sharing-datail li .theme-image img {
+	width: 100%;
+	height: 100%;
+}
+.popup-sharing-edit .popup-sharing-datail li input[type=radio]:nth-child(3) {
+	margin-left: 20px;
+}
+
+.popup-sharing-edit .popup-sharing-datail li.popup-sharing-content {
+	height: 200px;
+	padding: 10px 0;
+	position: relative;
+}
+
+.popup-sharing-edit .popup-sharing-datail li.popup-sharing-content strong {
+	position: absolute;
+
+}
+.popup-sharing-edit .popup-sharing-datail li.popup-sharing-content textarea {
+	display: inline-block;
+	width: 300px;
+	height: 180px;
+	background-color: #eee;
+	border: none;
+	resize: none;
+	margin-left: 110px;
+}
+
+.popup-sharing-edit .popup-sharing-datail li .btn-primary {
+	padding: 5px 10px;
+	background-color: #ce1126;
+	border: none;
+}
