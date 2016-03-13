@@ -136,3 +136,26 @@ body .mes .oneMes .mes-detail .mes-one-reply  .mes-content {
   margin-bottom: 5px;
 }
 
+
+
+
+/**right*/
+.right-others {
+  margin-top: 120px;
+}
+
+.right-others .one-content {
+  padding: 5px 10px;
+  background-color: #fff;
+  color: #666;
+  font-size: 12px;
+}
+
+.right-others .one-content li {
+  margin-bottom: 10px;
+}
+
+.right-others .one-content li:before {
+  content: "*";
+  font-size: 16px;
+}
