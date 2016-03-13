@@ -1,52 +1,60 @@
 * {
   margin: 0;
   padding: 0;
+  color: #666;
+}
+body {
+  background-color: #eee;
 }
 ul {
   list-style: none;
 }
-.clearfix:after {
-  display: block;
-  content: '';
-  visibility: hidden;
-  font-size: 0;
-  clear: both;
-  height: 0;
+
+.time-comment .time {
+  color: #808080;
+  font-size: 12px;
 }
-.clearfix {
-  zoom: 1;
-}
+
 .messageLeave {
-  background-color: #fff;
+
   padding-bottom: 100px;
   color: #666;
 }
 
 .messageLeave a {
-  color:#275e97;
-  font-weight: 500;
+  color:#333;
+  font-weight:bold;
+  font-size: 16px;
 }
 .messageLeave a:hover {
-  color:#275e97;
+  color:#ce1126;
 }
 body .mes .oneMes {
-  margin-top: 80px;
+  margin-top: 40px;
   padding: 20px 10px;
-  border-radius: 5px;
-  border: 1px solid #275e97;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background-color: #fff;
 }
 body .mes .oneMes:nth-child(1) {
   margin-top: 120px;
 }
+body .mes .oneMes .mes-main-title {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+}
 body .mes .oneMes .mes-main-title .media .media-left .main-img {
   display: block;
-  width: 106px;
-  height: 106px;
-  border: 3px solid #fff;
+  width: 100px;
+  height: 50px;
+  padding-left: 25px;
+}
+body .mes .oneMes .mes-main-title .media .media-left {
+  padding-right: 0;
 }
 body .mes .oneMes .mes-main-title .media .media-left .main-img .media-object {
-  width: 100px;
-  height: 100px;
+  width: 50px;
+  height: 50px;
   border-radius: 100%;
 }
 body .mes .oneMes .mes-main-title .media .media-left .mes-name {
@@ -55,15 +63,21 @@ body .mes .oneMes .mes-main-title .media .media-left .mes-name {
   line-height: 25px;
   text-align: center;
 }
-body .mes .oneMes .mes-main-title .media .media-body .mes-content {
+
+body .mes .oneMes .mes-main-title .media .media-left .time-comment {
+
+}
+body .mes .oneMes .mes-main-title .mes-content {
   line-height: 1.4;
+  padding-left: 25px;
 }
-body .mes .oneMes .mes-main-title .time-comment {
-  text-align: right;
+
+
+
+body .mes .oneMes .mes-main-title .reply-box {
+  padding: 0 25px;
 }
-body .mes .oneMes .mes-main-title .time-comment .time {
-  margin-right: 20px;
-}
+
 body .mes .oneMes .mes-main-title .reply-box .input-box {
   width: 100%;
   margin: 0 auto;
@@ -93,7 +107,7 @@ body .mes .oneMes .mes-detail {
   margin-top: 20px;
 }
 body .mes .oneMes .mes-detail .mes-one-reply {
-  margin-top: 10px;
+  margin-top: 20px;
 }
 body .mes .oneMes .mes-detail .mes-one-reply .media .media-left .reply-img {
   display: block;
@@ -112,32 +126,13 @@ body .mes .oneMes .mes-detail .mes-one-reply .media .media-left .mes-name {
   line-height: 25px;
   text-align: center;
 }
-body .mes .oneMes .mes-detail .mes-one-reply .media .media-body .mes-content {
+body .mes .oneMes .mes-detail .mes-one-reply  .mes-content {
   line-height: 1.4;
-}
-body .mes .oneMes .mes-detail .mes-one-reply .time-reply {
-  text-align: right;
-}
-body .mes .oneMes .mes-detail .mes-one-reply .time-reply .time {
-  margin-right: 20px;
-}
-body .mes .oneMes .mes-detail .mes-one-reply .other-reply {
-  margin-left: 60px;
-}
-body .mes .oneMes .mes-detail .mes-one-reply .other-reply .mes-other-reply .belong-oneMes .one-reply-one {
-  float: left;
-}
-body .mes .oneMes .mes-detail .mes-one-reply .other-reply .mes-other-reply .belong-oneMes .one-reply-one p a:nth-child(1) {
-  margin-right: 5px;
-}
-body .mes .oneMes .mes-detail .mes-one-reply .other-reply .mes-other-reply .belong-oneMes .one-reply-one p a:nth-child(2) {
-  margin-left: 5px;
-}
-body .mes .oneMes .mes-detail .mes-one-reply .other-reply .mes-other-reply .belong-oneMes .reply-right {
-  float: left;
+  padding-left: 25px;
 }
 
-.right-others {
-  margin-top: 120px;
+
+.mes-name {
+  margin-bottom: 5px;
 }
 

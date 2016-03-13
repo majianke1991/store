@@ -1,61 +1,61 @@
 .strategy {
-  margin-top: 80px;
-  padding: 20px 0;
+  margin-top: 101px;
 }
 
-.strategy .one-strategy-show {
-  margin-top: 100px;
+.btn-write {
+  background-color: #5bc0de;
+  color: #fff;
+  border-color: #5bc0de;
 }
-.strategy .one-strategy-show:nth-child(1) {
+.btn-write:focus, .btn-write:hover, .btn-write:active {
+  background-color: #275e97;
+  color: #fff;
+}
+.one-strategy-show {
+  padding: 5px 10px;
+  height: 210px;
   margin-top: 20px;
 }
-.strategy .one-strategy-show .one-strategy-intro {
-  width: 100%;
-  height: 300px;
-  position: relative;
+
+.one-strategy-show:hover {
+  background-color: #eee;
+  border-radius: 5px 5px 0 0;
 }
-.strategy .one-strategy-show .one-strategy-intro .strategy-object {
+
+.one-strategy-show .one-strategy-intro {
+  position: relative;
   width: 100%;
   height: 100%;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
 }
-.strategy .one-strategy-show .one-strategy-intro .strategy-title {
+
+.one-strategy-show .one-strategy-intro > a {
   position: absolute;
-  z-index: 1;
+  display: block;
+  width: 100%;
+  height: 200px;
+}
+
+.one-strategy-show .one-strategy-intro > a .strategy-object {
+  width:100%;
+  height: 200px;
+  border-radius: 5px 5px 0 0;
+}
+
+.one-strategy-show .one-strategy-intro .strategy-title {
+  position: absolute;
   left: 0;
   bottom: 0;
   width: 100%;
-  height: 30px;
-  line-height: 30px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
+  height: 25px;
+  line-height: 25px;
   background-color: #000;
   opacity: 0.5;
-  white-space: nowrap;
-  text-overflow: ellipsis;
   overflow: hidden;
-  text-align: center;
 }
-.strategy .one-strategy-show .one-strategy-intro .strategy-title a {
-  color: #fff;
-  font-size: 16px;
+
+.one-strategy-show .one-strategy-intro .strategy-title a {
+  color: #275e97;
 }
-.strategy .one-strategy-show .one-strategy-intro .strategy-other {
-  position: absolute;
-  bottom: -50px;
-  width: 100%;
-  height: 40px;
-  line-height: 40px;
-}
-.strategy .one-strategy-show .one-strategy-intro .strategy-other .good {
-  font-size: 16px;
-}
-.strategy .one-strategy-show .one-strategy-intro .strategy-other .good .good-number {
-  margin-right: 10px;
-}
-.strategy .one-strategy-show .one-strategy-intro .strategy-other .good .to-see {
-  font-size: 16px;
-}
+
+
+

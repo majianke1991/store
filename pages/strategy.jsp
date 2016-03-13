@@ -15,36 +15,36 @@
 	<div class="strategy">
 		<div class="container">
 			<div class="row">
-				<div
-					class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-8 col-xs-offset-2">
-					<!--内容部分都用这个尺寸-->
-					<div class="row">
-						<!---->
-						<div class="col-lg-12 col-md-12 col-xs-12">
-							<a class="pull-right" href="writeStrategy.jsp">我也要写游记</a>
-						</div>
-
+				
+				<div class="col-md-10">
+                    <div class="pull-right">
+                        <a class="btn btn-write" href="writeStrategy.html">我也要来写游记>></a>
+                    </div>
+                </div>
+				<div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-8 col-xs-offset-2"><!--内容部分都用这个尺寸-->
 						<c:forEach var="gonglue" items="${requestScope.gonglues }">
-							<div class="col-lg-5 col-lg-offset-1 col-md-5 col-md-offset-1 col-xs-12 one-strategy-show">
-								<div class="one-strategy-intro">
-									<a href="#"> <img class="strategy-object"
-										src="/store/${gonglue.image_path }" alt="">
-									</a>
-									<div class="strategy-title">
-										<a href="singleStrategy.html">${gonglue.title}</a>
-									</div>
-									<div class="strategy-other">
-										<p class="good">
-											<a class="good-number" href="">赞</a>[<span>12</span>] <a
-												class="btn  pull-right to-see" href="singleStrategy.html">我去看看>></a>
-										</p>
-									</div>
-								</div>
-							</div>
+                        <!--one strategy start-->
+                        <div class="col-md-3 col-sm-6 col-xs-12 one-strategy-show">
+                            <div class="one-strategy-intro">
+                                <a href="strategyDetail.html">
+                                    <img class="strategy-object" src="/store/${gonglue.image_path }"
+                                         alt="">
+                                </a>
+                                <div class="strategy-title"><a href="strategyDetail.html" title="${gonglue.title}">${gonglue.title}</a></div>
+                            </div>
+                        </div><!--one strategy end-->
 						</c:forEach>
+                </div>
 
-					</div>
-				</div>
+
+
+
+
+
+				
+
+					
+		
 			</div>
 		</div>
 	</div>
