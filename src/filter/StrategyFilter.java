@@ -2,6 +2,7 @@ package filter;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.HashMap;
 
 import javax.servlet.Filter;
 import javax.servlet.FilterChain;
@@ -26,8 +27,13 @@ public class StrategyFilter implements Filter {
 	public void doFilter(ServletRequest arg0, ServletResponse arg1,
 			FilterChain arg2) throws IOException, ServletException {
 		CommonUtil util = new CommonUtil();
-		ArrayList<Gonglue> gonglues = util.getGongluesFromApplication(getContext());
-		arg0.setAttribute("gonglues", gonglues);
+		HashMap<String, Gonglue> gonglues = util.getGongluesFromApplication(getContext());
+		String glid = arg0.getParameter("glid");
+		if(glid!=null){
+			arg0.setAttribute("gonglue",gonglues.get(glid));
+		}else{
+			arg0.setAttribute("gonglues", gonglues);
+		}
 		arg2.doFilter(arg0, arg1);
 	}
 

@@ -71,7 +71,7 @@ public class UploadServlet extends HttpServlet {
 							System.out.println("文件类型�" + item.getContentType());
 							System.out.println("文件名字" + item.getName());
 							File tempFile = new File(item.getName());
-							filePath = getSavePath() + File.separator+ profile.getPhoneNum()
+							filePath = getSavePath() + File.separator+"customerData"+ File.separator+ profile.getPhoneNum()
 									+ File.separator + tempFile.getName();
 							requestPath = "/customerData/"
 									+ profile.getPhoneNum() + "/"
@@ -101,7 +101,8 @@ public class UploadServlet extends HttpServlet {
 					gl.setText(text);
 					gl.setTitle(title);
 					gl.setImage_path(requestPath);
-					dao.createGL(gl);
+					gl.setAuthor(profile.getName());
+					gl = dao.createGL(gl);
 					util.addGonglue(gl, this.getServletContext());
 				}
 

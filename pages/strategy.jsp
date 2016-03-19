@@ -18,7 +18,7 @@
 				
 				<div class="col-md-10">
                     <div class="pull-right">
-                        <a class="btn btn-write" href="writeStrategy.html">我也要来写游记>></a>
+                        <a class="btn btn-write" href="writeStrategy.html">我也要来写游记</a>
                     </div>
                 </div>
 				<div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-8 col-xs-offset-2"><!--内容部分都用这个尺寸-->

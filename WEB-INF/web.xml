@@ -31,6 +31,7 @@
 	<filter-mapping>
 		<filter-name>StrategyFilter</filter-name>
 		<url-pattern>/pages/strategy.jsp</url-pattern>
+		<url-pattern>/pages/singleStrategy.jsp</url-pattern>
 		<dispatcher>INCLUDE</dispatcher>
 		<dispatcher>REQUEST</dispatcher>
 	</filter-mapping>
@@ -58,16 +59,28 @@
     </servlet-class> 
     <init-param>
     	<param-name>uploadPath</param-name>
-    	<param-value>C:\\Users\\Administrator.USER-20140816TV\\Desktop\\workdemo\\apache-tomcat-6.0.39\\webapps\\store\\customerData</param-value>
+    	<param-value>C:\\Users\\Administrator.USER-20140816TV\\Desktop\\workdemo\\apache-tomcat-6.0.39\\webapps\\store</param-value>
     </init-param>
 	</servlet>
 	
 	
+	<servlet>
+    <servlet-name>ActivityServlet</servlet-name>
+    <servlet-class>
+      servlets.ActivityServlet
+    </servlet-class> 
+    <init-param>
+    	<param-name>uploadPath</param-name>
+    	<param-value>C:\\Users\\Administrator.USER-20140816TV\\Desktop\\workdemo\\apache-tomcat-6.0.39\\webapps\\store</param-value>
+    </init-param>
+	</servlet>
+	
  <servlet-mapping>
-    <servlet-name>UploadServlet</servlet-name>
-    <url-pattern>/store/UploadServlet</url-pattern>
-    <url-pattern>/UploadServlet</url-pattern>
+    <servlet-name>ActivityServlet</servlet-name>
+    <url-pattern>/store/ActivityServlet</url-pattern>
+    <url-pattern>/ActivityServlet</url-pattern>
   </servlet-mapping>
+  
  <servlet-mapping>
     <servlet-name>Logout</servlet-name>
     <url-pattern>/logoutS</url-pattern>
