@@ -95,6 +95,23 @@
     <url-pattern>/ActivityServlet</url-pattern>
   </servlet-mapping>
   
+	<servlet>
+    <servlet-name>ShareUploadServlet</servlet-name>
+    <servlet-class>
+      servlets.ShareUploadServlet
+    </servlet-class> 
+    <init-param>
+    	<param-name>uploadPath</param-name>
+    	<param-value>C:\\Users\\Administrator.USER-20140816TV\\Desktop\\workdemo\\apache-tomcat-6.0.39\\webapps\\store</param-value>
+    </init-param>
+	</servlet>
+	
+ <servlet-mapping>
+    <servlet-name>ShareUploadServlet</servlet-name>
+    <url-pattern>/store/ShareUploadServlet</url-pattern>
+    <url-pattern>/ShareUploadServlet</url-pattern>
+  </servlet-mapping>
+  
  <servlet-mapping>
     <servlet-name>Logout</servlet-name>
     <url-pattern>/logoutS</url-pattern>

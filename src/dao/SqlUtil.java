@@ -14,6 +14,7 @@ import utils.CommonUtil;
 import beans.Gonglue;
 import beans.HD;
 import beans.Profile;
+import beans.Share;
 
 public class SqlUtil {
 
@@ -26,6 +27,25 @@ public class SqlUtil {
 		return DriverManager.getConnection(
 				"jdbc:oracle:thin:@localhost:1521:orcl", "hehe", "hehe");
 	}
+	public Share createShare(Share share) throws SQLException {
+		Connection conn = getConnection();
+		String sql = "insert into sharing values (?,?,?,?,?,?)";
+		Calendar cal = Calendar.getInstance();
+		SimpleDateFormat datef = new SimpleDateFormat("MM/dd/yyyy");
+		String date = datef.format(cal.getTime());
+		String id = CommonUtil.generateId("sh");
+		PreparedStatement statement = conn.prepareStatement(sql);
+		statement.setString(1, id);
+		statement.setString(2, share.getZhuti());
+		statement.setString(3, share.getPlace());
+		statement.setString(4, share.getDate());
+		statement.setString(5, share.getImage_path());
+		statement.setString(6, share.getDescription());
+		statement.executeUpdate();
+		share.setId(id);
+		return share;
+	}
+	
 	public HD createHD(HD hd) throws SQLException {
 		Connection conn = getConnection();
 		String sql = "insert into HD values (?,?,?,?,?,?,?,?)";
@@ -145,5 +165,26 @@ public class SqlUtil {
 			hds.add(hd);
 		}
 		return hds;
+	}
+	
+	public ArrayList<Share> findALLShare() throws SQLException {
+		Connection conn = getConnection();
+		String sql = "select * from sharing";
+		PreparedStatement statement = conn.prepareStatement(sql);
+		ResultSet rs = statement.executeQuery();
+		ArrayList<Share> shs = new ArrayList<Share>();
+		while (rs.next()) {
+			
+			int rowNum = rs.getRow();
+			Share sh = new Share();
+			sh.setDescription(rs.getString("description"));
+			sh.setDate(rs.getString("begin_date"));
+			sh.setId(rs.getString("id"));
+			sh.setImage_path(rs.getString("image_path"));
+			sh.setZhuti(rs.getString("zhuti"));
+			sh.setPlace(rs.getString("place"));
+			shs.add(sh);
+		}
+		return shs;
 	}
 }

@@ -23,10 +23,12 @@ import javax.servlet.http.HttpSession;
 
 
 
+
 import dao.SqlUtil;
 import beans.Gonglue;
 import beans.HD;
 import beans.Profile;
+import beans.Share;
 
 public class CommonUtil {
 	public static boolean isBlank(String str){
@@ -90,8 +92,30 @@ public class CommonUtil {
 		return hdMap;
 	}
 	
+	
 	public synchronized void addHD(HD hd,ServletContext application){
 		this.getHDFromApplication(application).put(hd.getId(), hd);
 	}
 	
+	public HashMap<String,Share> getShareFromApplication(ServletContext application){
+		HashMap<String,Share> shareMap= (HashMap<String, Share>) application.getAttribute("shares");
+		if(shareMap==null){
+			try {
+				SqlUtil untils = new SqlUtil();
+				shareMap = new HashMap<String, Share>();
+				ArrayList<Share> shares = untils.findALLShare();
+				for(Share sh : shares){
+					shareMap.put(sh.getId(), sh);
+				}
+				application.setAttribute("shares", shareMap);
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+		}
+		return shareMap;
+	}
+	
+	public synchronized void addShare(Share sh,ServletContext application){
+		this.getShareFromApplication(application).put(sh.getId(), sh);
+	}
 }
