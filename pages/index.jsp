@@ -5,11 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>matetrip index</title>
-    <link rel="stylesheet" href="../../bootstrap-3.3.5/dist/css/bootstrap.min.css">
-    <link rel="stylesheet/less" href="../css/index.less">
-    <script src="../js/less.js"></script>
+    <link rel="stylesheet" href="../css/plug-css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/index.css">
     <script src="../js/jquery-1.11.2.js"></script>
-    <script src="../../bootstrap-3.3.5/dist/js/bootstrap.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
     <script src="../myjs/index.js"></script>
 </head>
 <body>
@@ -18,7 +17,7 @@
     
 
 <div class="ajaxPage">
-    <!--carousel-->
+    <!--carousel start-->
     <div id="myCarousel" class="carousel slide myCarousel">
         <!-- 轮播（Carousel）指标 -->
         <ol class="carousel-indicators">
@@ -44,7 +43,7 @@
                 <div class="carousel-caption">标题 3</div>
             </div>
         </div>
-    </div>
+    </div><!--carousel end-->
 
     <div id="intro">
         <div class="container">
@@ -66,6 +65,9 @@
             </div>
         </div>
     </div>
+    
+    
+    <!-- need to be replace  最多展示6个(离现在时间最近的四个) -->
     <div id="activity-recent">
         <div class="container">
             <div class="row">
@@ -167,10 +169,22 @@
                             </div>
                         </div>
                     </div><!--one activity end-->
+                    
+                     <div class="showMore"><a class="pull-right" href="activity.html">查看更多出行活动》》</a></div>
+                    
+                    
+                    
+                    
+                    <!-- if there is no activity, show like this-->
+                     <div class="activity-no-item">暂无出行活动，还请继续关注园园哦...</div>
+                     
+                     
                 </div>
             </div>
         </div>
     </div>
+    
+    <!-- strategy: show 6 items at most, 按最近的时间依次排列-->
     <div id="strategy">
         <div class="container">
             <div class="row">
@@ -204,40 +218,48 @@
                                 <p><a href="#">一场说走就走的旅行---毕棚沟</a></p>
                             </div>
                         </div>
-                        <!-- <div class="clearfix visible-md-block visible-lg-block visible-sm-block"></div>-->
-                        <div class="row">
-                            <div class="col-md-5 col-xs-12 one-strategy">
-                                <img class="sharePhoto" src="../img/11.jpg" alt="">
+                        <div class="col-md-5 col-xs-12 one-strategy">
+                            <img class="sharePhoto" src="../img/11.jpg" alt="">
 
-                                <div class="thumbnail">
-                                    <img src="../img/12.jpg"
-                                         alt="通用的占位符缩略图">
-                                </div>
-                                <div class="caption">
-                                    <h3>分享者：<span>唐莹</span></h3>
-
-                                    <p><a href="#">西岭雪山，你值得拥有---人生的第一次大雪</a></p>
-                                </div>
+                            <div class="thumbnail">
+                                <img src="../img/12.jpg"
+                                     alt="通用的占位符缩略图">
                             </div>
-                            <div class="col-md-5 col-xs-12 one-strategy">
-                                <img class="sharePhoto" src="../img/11.jpg" alt="">
+                            <div class="caption">
+                                <h3>分享者：<span>唐莹</span></h3>
 
-                                <div class="thumbnail">
-                                    <img src="../img/12.jpg"
-                                         alt="通用的占位符缩略图">
-                                </div>
-                                <div class="caption">
-                                    <h3>分享者：<span>唐莹</span></h3>
-
-                                    <p><a href="#">一场说走就走的旅行---毕棚沟</a></p>
-                                </div>
+                                <p><a href="#">西岭雪山，你值得拥有---人生的第一次大雪</a></p>
                             </div>
                         </div>
+                        <div class="col-md-5 col-xs-12 one-strategy">
+                            <img class="sharePhoto" src="../img/11.jpg" alt="">
+
+                            <div class="thumbnail">
+                                <img src="../img/12.jpg"
+                                     alt="通用的占位符缩略图">
+                            </div>
+                            <div class="caption">
+                                <h3>分享者：<span>唐莹</span></h3>
+
+                                <p><a href="#">一场说走就走的旅行---毕棚沟</a></p>
+                            </div>
+                        </div>
+
+                        <div class="clearfix visible-md-block visible-lg-block visible-sm-block">
+                        <div class="col-md-12 showMore-strategy"><a class="pull-right" href="activity.html">查看更多攻略》》</a></div>
+
+
+
+                        <!-- if there is no strategy, show like this-->
+                        <div class="col-md-12 activity-no-item">暂无友友发布攻略<a href="#">我去写攻略》》</a></div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    
+    
+    <!--旅行分享会: 最多展示4个， 按最近的时间依次排列-->
     <div id="travel-sharing-party">
         <div class="container">
             <div class="row">
@@ -324,6 +346,12 @@
                             </article>
                         </div>
                     </div><!--one travel sharing party end-->
+                    <div class="col-md-12 showMore-strategy"><a class="pull-right" href="travelSharing.html">查看更多旅行分享会》》</a></div>
+
+
+
+                        <!-- if there is no travelSharing, show like this-->
+                        <div class="col-md-12 activity-no-item">暂未举办分享会哦，请友友们耐心等待.</div>
                 </div>
             </div>
         </div>

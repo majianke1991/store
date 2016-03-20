@@ -22,6 +22,7 @@
         <div class="collapse navbar-collapse" id="my-navbar">
             <ul class="nav navbar-nav my-fun-nav">
                 <li class="active"><a href="index.html">首页</a></li>
+                <li><a href="javascript:void(0);" onclick="ajaxPageSet('activity.html');">出行活动</a></li>
                 <li><a href="javascript:void(0);" onclick="ajaxPageSet('strategy.html');">达人攻略</a></li>
                 <li><a href="javascript:void(0);" onclick="ajaxPageSet('travelSharing.html');">分享会</a></li>
                 <li><a href="javascript:void(0);" onclick="ajaxPageSet('messageLeave.html');">留言</a></li>

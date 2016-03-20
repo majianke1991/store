@@ -1,0 +1,59 @@
+.activity .one-activity{
+    margin-top: 40px;
+    padding: 15px 10px;
+    border: 1px solid #ededed;
+    background-color: #fff;
+}
+
+.activity .one-activity:nth-child(1) {
+    margin-top: 120px;
+}
+
+.activity .one-activity .activity-imgLeft {
+    height: 220px;
+}
+
+.activity .one-activity .activity-detail {
+    /*margin-top: 20px;*/
+}
+
+.activity .one-activity .activity-imgLeft .activity-img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.activity .one-activity .activity-imgLeft .activity-img img {
+    width: 100%;
+    height: 100%;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.activity .one-activity .activity-imgLeft .activity-theme {
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    overflow: hidden;
+    line-height: 30px;
+    background-color: #000;
+    opacity: 0.5;
+    text-align: center;
+    bottom: 0;
+    left: 0;
+    color: #fff;
+    -webkit-border-radius: 0 0 5px 5px;
+    -moz-border-radius: 0 0 5px 5px;
+    border-radius: 0 0 5px 5px;
+}
+
+.activity .one-activity .activity-detail .activity-time,
+.activity .one-activity .activity-detail .activity-budget {
+    font-size: 20px;
+    color: #666;
+}
+
+.activity .one-activity .activity-detail .activity-explain {
+    color: #666;
+}

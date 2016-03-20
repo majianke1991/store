@@ -121,6 +121,9 @@ body .ajaxPage #activity-recent {
   background-color: #275e97;
   color: #eee;
 }
+body .ajaxPage #activity-recent .activity-no-item {
+  padding: 10px;
+}
 body .ajaxPage #activity-recent .one-activity {
   margin-top: 40px;
   padding: 15px 10px;
