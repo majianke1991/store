@@ -5,12 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>searchPass page</title>
-    <link rel="stylesheet" href="../../bootstrap-3.3.5/dist/css/bootstrap.min.css">
-    <link rel="stylesheet/less" href="../css/searchPass.less">
-    <script src="../js/less.js"></script>
+    <link rel="stylesheet" href="../css/plug-css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/searchPass.less">
     <script src="../js/jquery-1.11.2.js"></script>
-    <script src="../../bootstrap-3.3.5/dist/js/bootstrap.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
     <script src="../myjs/searchPass.js"></script>
+
+
+	
 </head>
 <body>
     <div class="searchPass">

@@ -5,10 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>login page</title>
-    <link rel="stylesheet/less" href="/store/css/login.less">
-    <script src="/store/js/less.js"></script>
+	<link rel="stylesheet" href="../css/plug-css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/base.css"/>
+    <link rel="stylesheet" href="/store/css/login.css">
     <script src="/store/js/jquery-1.11.2.js"></script>
+	<script type="text/javascript" src="../myjs/global.js"></script>
     <script src="/store/myjs/login.js"></script>
+
+	
 </head>
 <body>
     <div class="login">

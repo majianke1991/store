@@ -4,11 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <title>写攻略</title>
-    <link rel="stylesheet" href="../../bootstrap-3.3.5/dist/css/bootstrap.min.css">
-    <link rel="stylesheet/less" href="../css/writeStrategy.less">
-    <script src="../js/less.js"></script>
+    <link rel="stylesheet" href="../css/plug-css/bootstrap.min.css">
+	<link rel="stylesheet" href="../css/base.css"/>
+    <link rel="stylesheet" href="../css/writeStrategy.css">
     <script src="../js/jquery-1.11.2.js"></script>
-    <script src="../../bootstrap-3.3.5/dist/js/bootstrap.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../myjs/global.js"></script>
+
+	
 </head>
 <body>
 <jsp:include page="header.jsp"/>

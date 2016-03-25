@@ -3,10 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <title>分享会详细页面</title>
-    <link rel="stylesheet" href="../../bootstrap-3.3.5/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/plug-css/bootstrap.min.css">
+	<link rel="stylesheet" href="../css/base.css"/>
     <link rel="stylesheet" href="../css/sharingDetail.css">
     <script src="../js/jquery-1.11.2.js"></script>
-    <script src="../../bootstrap-3.3.5/dist/js/bootstrap.min.js"></script>
+   <script src="../js/bootstrap.min.js"></script>
+   <script type="text/javascript" src="../myjs/global.js"></script>
+
+	
 </head>
 <body>
     <div class="sharingDetail">

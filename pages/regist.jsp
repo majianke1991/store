@@ -5,10 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>regist page</title>
-    <link rel="stylesheet/less" href="/store/css/regist.less">
-    <script src="/store/js/less.js"></script>
+	<link rel="stylesheet" href="../css/plug-css/bootstrap.min.css">
+    <link rel="stylesheet" href="/store/css/regist.css">
     <script src="/store/js/jquery-1.11.2.js"></script>
     <script src="/store/myjs/regist.js"></script>
+
+
+	
 </head>
 <body>
     <div class="bg-box">

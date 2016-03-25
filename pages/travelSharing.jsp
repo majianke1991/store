@@ -4,13 +4,16 @@
 <meta charset="UTF-8">
 <title>旅行分享会</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="../../bootstrap-3.3.5/dist/css/bootstrap.min.css"/>
+<link rel="stylesheet" href="../css/plug-css/bootstrap.min.css">
 <link rel="stylesheet" href="../css/base.css"/>
 <link rel="stylesheet" href="../css/travelSharing.css"/>
 <script type="text/javascript" src="../js/jquery-1.11.2.js"></script>
-<script type="text/javascript" src="../../bootstrap-3.3.5/dist/js/bootstrap.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
 <script type="text/javascript" src="../myjs/global.js"></script>
 <script type="text/javascript" src="../myjs/travelSharing.js"></script>
+
+
+
 </head>
 <body>
 	<div class="container">
