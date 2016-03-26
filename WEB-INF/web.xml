@@ -34,6 +34,18 @@
 	<filter-class>filter.ActivityDetailFilter</filter-class>
 	</filter> 
 	
+	<filter>
+	<filter-name>HomePageFilter</filter-name>	
+	<filter-class>filter.HomePageFilter</filter-class>
+	</filter>
+	
+	<filter-mapping>
+		<filter-name>HomePageFilter</filter-name>
+		<url-pattern>/pages/index.jsp</url-pattern>
+		<dispatcher>INCLUDE</dispatcher>
+		<dispatcher>REQUEST</dispatcher>
+	</filter-mapping>
+	
 	<filter-mapping>
 		<filter-name>StrategyFilter</filter-name>
 		<url-pattern>/pages/strategy.jsp</url-pattern>
@@ -45,6 +57,7 @@
 	<filter-mapping>
 		<filter-name>ActivityDetailFilter</filter-name>
 		<url-pattern>/pages/activityDetail.jsp</url-pattern>
+		<url-pattern>/pages/sharingDetail.jsp</url-pattern>
 		<dispatcher>INCLUDE</dispatcher>
 		<dispatcher>REQUEST</dispatcher>
 	</filter-mapping>

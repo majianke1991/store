@@ -5,6 +5,7 @@ public class Share {
 	private String zhuti;
 	private String place;
 	private String date;
+	private String creation_date;
 	private String image_path;
 	private String description;
 	/**
@@ -78,5 +79,17 @@ public class Share {
 	 */
 	public void setDescription(String description) {
 		this.description = description;
+	}
+	/**
+	 * @return the creation_date
+	 */
+	public String getCreation_date() {
+		return creation_date;
+	}
+	/**
+	 * @param creation_date the creation_date to set
+	 */
+	public void setCreation_date(String creation_date) {
+		this.creation_date = creation_date;
 	}
 }

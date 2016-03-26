@@ -29,7 +29,7 @@ public class SqlUtil {
 	}
 	public Share createShare(Share share) throws SQLException {
 		Connection conn = getConnection();
-		String sql = "insert into sharing values (?,?,?,?,?,?)";
+		String sql = "insert into sharing values (?,?,?,?,?,?,?)";
 		Calendar cal = Calendar.getInstance();
 		SimpleDateFormat datef = new SimpleDateFormat("MM/dd/yyyy");
 		String date = datef.format(cal.getTime());
@@ -41,8 +41,10 @@ public class SqlUtil {
 		statement.setString(4, share.getDate());
 		statement.setString(5, share.getImage_path());
 		statement.setString(6, share.getDescription());
+		statement.setString(7, date);
 		statement.executeUpdate();
 		share.setId(id);
+		share.setCreation_date(date);
 		return share;
 	}
 	
@@ -138,7 +140,7 @@ public class SqlUtil {
 			gonglue.setImage_path(rs.getString("image_path"));
 			gonglue.setId(rs.getString("id"));
 			gonglue.setAuthor(rs.getString("author_name"));
-			gonglue.setDate("create_data");
+			gonglue.setDate(rs.getString("create_data"));
 			gonglues.add(gonglue);
 		}
 		return gonglues;
@@ -183,6 +185,7 @@ public class SqlUtil {
 			sh.setImage_path(rs.getString("image_path"));
 			sh.setZhuti(rs.getString("zhuti"));
 			sh.setPlace(rs.getString("place"));
+			sh.setCreation_date(rs.getString("creation_date"));
 			shs.add(sh);
 		}
 		return shs;
