@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="../css/plug-css/bootstrap.min.css">
 <link rel="stylesheet" href="../css/base.css"/>
-<link rel="stylesheet" type="text/css" href="../plug-css/jquery.datetimepicker.css"/>
+<link rel="stylesheet" type="text/css" href="../css/plug-css/jquery.datetimepicker.css"/>
 <link rel="stylesheet" href="../css/createActivity.css"/>
 <script type="text/javascript" src="../js/jquery-1.11.2.js"></script>
 <script type="text/javascript" src="../myjs/global.js"></script>
