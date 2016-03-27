@@ -4,7 +4,7 @@ import java.io.Serializable;
 
 public class Profile implements Serializable{
 	private String name;
-	private int phoneNum;
+	private long phoneNum;
 	private String password;
 	private String school;
 	
@@ -13,12 +13,6 @@ public class Profile implements Serializable{
 	}
 	public void setName(String name) {
 		this.name = name;
-	}
-	public int getPhoneNum() {
-		return phoneNum;
-	}
-	public void setPhoneNum(int phoneNum) {
-		this.phoneNum = phoneNum;
 	}
 	public String getPassword() {
 		return password;
@@ -31,6 +25,18 @@ public class Profile implements Serializable{
 	}
 	public void setSchool(String school) {
 		this.school = school;
+	}
+	/**
+	 * @return the phoneNum
+	 */
+	public long getPhoneNum() {
+		return phoneNum;
+	}
+	/**
+	 * @param phoneNum the phoneNum to set
+	 */
+	public void setPhoneNum(long phoneNum) {
+		this.phoneNum = phoneNum;
 	}
 	
 }

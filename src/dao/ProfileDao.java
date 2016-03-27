@@ -11,8 +11,8 @@ public class ProfileDao {
 		sqlUtil.createUser(profile);
 	}
 	
-	public Profile findProfile(int phoneNum) throws SQLException{
+	public Profile findProfile(long phoneNum,String password) throws SQLException{
 		SqlUtil sqlUtil = new SqlUtil();
-		return sqlUtil.findUser(phoneNum);	
+		return sqlUtil.findUser(phoneNum,password);	
 	}
 }

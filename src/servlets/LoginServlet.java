@@ -21,9 +21,9 @@ public class LoginServlet extends HttpServlet{
 		String phoneStr = req.getParameter("phoneNum");
 		String password = req.getParameter("password");
 		try{
-			int phoneNum = Integer.parseInt(phoneStr);
+			long phoneNum = Long.parseLong(phoneStr);
 			ProfileDao dao = new ProfileDao();
-			Profile profile = dao.findProfile(phoneNum);
+			Profile profile = dao.findProfile(phoneNum,password);
 			if(profile!=null){
 				if(!profile.getPassword().equals(password)){
 					req.setAttribute("errorMsg", "passwordNotRight");

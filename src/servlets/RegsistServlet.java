@@ -52,7 +52,7 @@ public class RegsistServlet extends HttpServlet {
 		}
 		try {
 
-			int phoneNum = Integer.parseInt(phoneStr);
+			long phoneNum = Long.parseLong(phoneStr);
 			Profile profile = new Profile();
 			profile.setPhoneNum(phoneNum);
 			profile.setName(name);

@@ -27,6 +27,20 @@ public class SqlUtil {
 		return DriverManager.getConnection(
 				"jdbc:oracle:thin:@localhost:1521:orcl", "hehe", "hehe");
 	}
+	
+	public void updateProfile(Profile profile,long phoneNum) throws SQLException{
+		
+		Connection conn = getConnection();
+		String sql = "update profile set phoneNum =?,name=?,password=?,school=? where phoneNum = ? ";
+		PreparedStatement statement = conn.prepareStatement(sql);
+		statement.setLong(1, profile.getPhoneNum());
+		statement.setString(2, profile.getName());
+		statement.setString(3, profile.getPassword());
+		statement.setString(4, profile.getSchool());
+		statement.setLong(5, phoneNum);
+		statement.executeUpdate();
+	}
+	
 	public Share createShare(Share share) throws SQLException {
 		Connection conn = getConnection();
 		String sql = "insert into sharing values (?,?,?,?,?,?,?)";
@@ -75,24 +89,25 @@ public class SqlUtil {
 		Connection conn = getConnection();
 		String sql = "insert into profile values (?,?,?,?)";
 		PreparedStatement statement = conn.prepareStatement(sql);
-		statement.setInt(1, profile.getPhoneNum());
+		statement.setLong(1, profile.getPhoneNum());
 		statement.setString(2, profile.getName());
 		statement.setString(3, profile.getPassword());
 		statement.setString(4, profile.getSchool());
 		statement.executeUpdate();
 	}
 
-	public Profile findUser(int phoneNum) throws SQLException {
+	public Profile findUser(Long phoneNum ,String password) throws SQLException {
 		Connection conn = getConnection();
-		String sql = "select * from profile where phoneNum = ?";
+		String sql = "select * from profile where phoneNum = ? AND password=?";
 		PreparedStatement statement = conn.prepareStatement(sql);
-		statement.setInt(1, phoneNum);
+		statement.setLong(1, phoneNum);
+		statement.setString(2, password);
 		ResultSet rs = statement.executeQuery();
 		Profile profile = null;
 		if (rs.next()) {
 			int rowNum = rs.getRow();
 			profile = new Profile();
-			profile.setPhoneNum(rs.getInt("phoneNum"));
+			profile.setPhoneNum(rs.getLong("phoneNum"));
 			profile.setName(rs.getString("name"));
 			profile.setPassword(rs.getString("password"));
 			profile.setSchool(rs.getString("school"));
@@ -112,7 +127,7 @@ public class SqlUtil {
 		String id = CommonUtil.generateId("gl");
 		gl.setDate(date);
 		gl.setId(id);
-		statement.setInt(1, gl.getPhoneNum());
+		statement.setLong(1, gl.getPhoneNum());
 		statement.setString(2, gl.getTitle());
 		statement.setString(3, gl.getText());
 		statement.setString(4, gl.getImage_path());
@@ -134,7 +149,7 @@ public class SqlUtil {
 		
 			int rowNum = rs.getRow();
 			Gonglue gonglue = new Gonglue();
-			gonglue.setPhoneNum(rs.getInt("phoneNum"));
+			gonglue.setPhoneNum(rs.getLong("phoneNum"));
 			gonglue.setTitle(rs.getString("title"));
 			gonglue.setText(rs.getString("text"));
 			gonglue.setImage_path(rs.getString("image_path"));

@@ -16,7 +16,7 @@ public class Gonglue {
 	public void setAuthor(String author) {
 		this.author = author;
 	}
-	private int phoneNum;
+	private long phoneNum;
 	private String title;
 	private String text;
 	private String image_path;
@@ -32,12 +32,6 @@ public class Gonglue {
 	public void setTitle(String title) {
 		this.title = title;
 	}
-	public int getPhoneNum() {
-		return phoneNum;
-	}
-	public void setPhoneNum(int phoneNum) {
-		this.phoneNum = phoneNum;
-	}
 	public String getText() {
 		return text;
 	}
@@ -49,5 +43,17 @@ public class Gonglue {
 	}
 	public void setImage_path(String image_path) {
 		this.image_path = image_path;
+	}
+	/**
+	 * @return the phoneNum
+	 */
+	public long getPhoneNum() {
+		return phoneNum;
+	}
+	/**
+	 * @param phoneNum the phoneNum to set
+	 */
+	public void setPhoneNum(long phoneNum) {
+		this.phoneNum = phoneNum;
 	}
 }

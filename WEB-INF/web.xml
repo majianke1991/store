@@ -46,8 +46,32 @@
 		<param-name>adminPhone</param-name>
 		<param-value>123</param-value>
 	</init-param>
-	
 	</filter>
+	
+	<filter>
+	<filter-name>MyaccountFilter</filter-name>	
+	<filter-class>filter.MyaccountFilter</filter-class>
+	</filter>
+	
+	<filter>
+	<filter-name>EncodingFilter</filter-name>	
+	<filter-class>filter.EncodingFilter</filter-class>
+	</filter>
+	
+	<filter-mapping>
+		<filter-name>EncodingFilter</filter-name>
+		<url-pattern>*</url-pattern>
+		<dispatcher>INCLUDE</dispatcher>
+		<dispatcher>REQUEST</dispatcher>
+		<dispatcher>FORWARD</dispatcher>
+	</filter-mapping>
+	
+	<filter-mapping>
+		<filter-name>MyaccountFilter</filter-name>
+		<url-pattern>/pages/myAccount/*</url-pattern>
+		<dispatcher>INCLUDE</dispatcher>
+		<dispatcher>REQUEST</dispatcher>
+	</filter-mapping>
 	
 	<filter-mapping>
 		<filter-name>AccessControlFilter</filter-name>
@@ -120,12 +144,6 @@
     </init-param>
 	</servlet>
 	
- <servlet-mapping>
-    <servlet-name>ActivityServlet</servlet-name>
-    <url-pattern>/store/ActivityServlet</url-pattern>
-    <url-pattern>/ActivityServlet</url-pattern>
-  </servlet-mapping>
-  
 	<servlet>
     <servlet-name>ShareUploadServlet</servlet-name>
     <servlet-class>
@@ -137,6 +155,32 @@
     </init-param>
 	</servlet>
 	
+	<servlet>
+    <servlet-name>ProfileUpdate</servlet-name>
+    <servlet-class>
+      servlets.ProfileUpdate
+    </servlet-class> 
+	</servlet>
+	
+	
+	
+ <servlet-mapping>
+    <servlet-name>ProfileUpdate</servlet-name>
+    <url-pattern>/ProfileUpdate</url-pattern>
+  </servlet-mapping>
+  
+ <servlet-mapping>
+    <servlet-name>ActivityServlet</servlet-name>
+    <url-pattern>/store/ActivityServlet</url-pattern>
+    <url-pattern>/ActivityServlet</url-pattern>
+  </servlet-mapping>
+  
+	
+ <servlet-mapping>
+    <servlet-name>ShareUploadServlet</servlet-name>
+    <url-pattern>/ShareUploadServlet</url-pattern>
+  </servlet-mapping>
+  
  <servlet-mapping>
     <servlet-name>UploadServlet</servlet-name>
     <url-pattern>/store/UploadServlet</url-pattern>

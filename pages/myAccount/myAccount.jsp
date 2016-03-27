@@ -4,26 +4,28 @@
     <meta charset="UTF-8">
     <title>my account</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="../../css/plug-css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="../../css/plug-css/jquery.datetimepicker.css"/>
-    <link rel="stylesheet" href="../../css/base.css"/>
-    <link rel="stylesheet" href="../../css/myAccount.css"/>
-    <script type="text/javascript" src="../../js/jquery-1.11.2.js"></script>
+    <link rel="stylesheet" href="/store/css/plug-css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/store/css/plug-css/jquery.datetimepicker.css"/>
+    <link rel="stylesheet" href="/store/css/base.css"/>
+    <link rel="stylesheet" href="/store/css/myAccount.css"/>
+    <script type="text/javascript" src="/store/js/jquery-1.11.2.js"></script>
     <!--jquery时间日期插件-->
-    <script src="../../js/jquery.datetimepicker.js"></script>
+    <script src="/store/js/jquery.datetimepicker.js"></script>
 
-    <script src="../../js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="../../myjs/global.js"></script>
-    <script type="text/javascript" src="../../myjs/myAccount.js"></script>
+    <script src="/store/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/store/myjs/global.js"></script>
+    <script type="text/javascript" src="/store/myjs/myAccount.js"></script>
 
 
 	
 
 </head>
 <body>
-<!--head nav-->
-	<jsp:include page="/pages/header.jsp" />
-	
+
+<c:if test="${not empty requestScope.errorMsg }">
+	${requestScope.errorMsg }
+</c:if>
+
 <div class="container">
     <div class="row">
         <div class="col-md-12 col-sm-12 col-xs-12"><!-- 最外层 -->
@@ -39,7 +41,7 @@
                             <div class="clearfix">
                                 <div class="row">
                                     <div class="myphoto">
-                                        <img src="../img/1.jpg">
+                                        <img src="/store/img/1.jpg">
                                         <a class="upload-photo hidden" href="#"><input type="file"/>修改头像</a>
                                         <input type="file" class="hidden"/>
                                     </div>
@@ -52,14 +54,14 @@
                                 </div>
                             </div>
                             <ul class="nav-myAccount">
-                                <li><a href="#" onclick="myAccountLoad('myAccountStrategy.html');return false;">我的游记</a>
+                                <li><a href="#" onclick="myAccountLoad('/store/pages/myAccount/myAccountStrategy.jsp');return false;">我的游记</a>
                                 </li>
-                                <li><a href="#" onclick="myAccountLoad('myAccountProfile.html');return false;">我的资料</a>
+                                <li><a href="#" onclick="myAccountLoad('/store/pages/myAccount/myAccountProfile.jsp');return false;">我的资料</a>
                                 </li>
-                                <li><a href="#" onclick="myAccountLoad('myAccountActivity.html');return false;">活动管理</a>
+                                <li><a href="#" onclick="myAccountLoad('/store/pages/myAccount/myAccountActivity.jsp');return false;">活动管理</a>
                                 </li>
                                 <!-- 管理员才有 -->
-                                <li><a href="#" onclick="myAccountLoad('myAccountSharing.html');return false;">旅行分享会</a>
+                                <li><a href="#" onclick="myAccountLoad('/store/pages/myAccount/myAccountSharing.jsp');return false;">旅行分享会</a>
                                 </li>
                                 <!-- 管理员才有 -->
                             </ul>
