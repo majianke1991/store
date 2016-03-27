@@ -4,23 +4,26 @@
     <meta charset="UTF-8">
     <title>my account</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="../css/plug-css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="../css/plug-css/jquery.datetimepicker.css"/>
-    <link rel="stylesheet" href="../css/base.css"/>
-    <link rel="stylesheet" href="../css/myAccount.css"/>
-    <script type="text/javascript" src="../js/jquery-1.11.2.js"></script>
+    <link rel="stylesheet" href="../../css/plug-css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../../css/plug-css/jquery.datetimepicker.css"/>
+    <link rel="stylesheet" href="../../css/base.css"/>
+    <link rel="stylesheet" href="../../css/myAccount.css"/>
+    <script type="text/javascript" src="../../js/jquery-1.11.2.js"></script>
     <!--jquery时间日期插件-->
-    <script src="../js/jquery.datetimepicker.js"></script>
+    <script src="../../js/jquery.datetimepicker.js"></script>
 
-    <script src="../js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="../myjs/global.js"></script>
-    <script type="text/javascript" src="../myjs/myAccount.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../../myjs/global.js"></script>
+    <script type="text/javascript" src="../../myjs/myAccount.js"></script>
 
 
 	
 
 </head>
 <body>
+<!--head nav-->
+	<jsp:include page="/pages/header.jsp" />
+	
 <div class="container">
     <div class="row">
         <div class="col-md-12 col-sm-12 col-xs-12"><!-- 最外层 -->
