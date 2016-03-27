@@ -120,9 +120,9 @@
 	</servlet>
 	
  <servlet-mapping>
-    <servlet-name>ShareUploadServlet</servlet-name>
-    <url-pattern>/store/ShareUploadServlet</url-pattern>
-    <url-pattern>/ShareUploadServlet</url-pattern>
+    <servlet-name>UploadServlet</servlet-name>
+    <url-pattern>/store/UploadServlet</url-pattern>
+    <url-pattern>/UploadServlet</url-pattern>
   </servlet-mapping>
   
  <servlet-mapping>
