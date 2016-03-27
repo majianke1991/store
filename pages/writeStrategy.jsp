@@ -4,12 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <title>写攻略</title>
-    <link rel="stylesheet" href="../css/plug-css/bootstrap.min.css">
-	<link rel="stylesheet" href="../css/base.css"/>
-    <link rel="stylesheet" href="../css/writeStrategy.css">
-    <script src="../js/jquery-1.11.2.js"></script>
-    <script src="../js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="../myjs/global.js"></script>
+    <link rel="stylesheet" href="/store/css/plug-css/bootstrap.min.css">
+	<link rel="stylesheet" href="/store/css/base.css"/>
+    <link rel="stylesheet" href="/store/css/writeStrategy.css">
+    <script src="/store/js/jquery-1.11.2.js"></script>
+    <script src="/store/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/store/myjs/global.js"></script>
 
 	
 </head>
