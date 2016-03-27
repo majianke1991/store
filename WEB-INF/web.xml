@@ -60,7 +60,7 @@
 	
 	<filter-mapping>
 		<filter-name>EncodingFilter</filter-name>
-		<url-pattern>*</url-pattern>
+		<url-pattern>/*</url-pattern>
 		<dispatcher>INCLUDE</dispatcher>
 		<dispatcher>REQUEST</dispatcher>
 		<dispatcher>FORWARD</dispatcher>
@@ -128,7 +128,7 @@
     </servlet-class> 
     <init-param>
     	<param-name>uploadPath</param-name>
-    	<param-value>C:\\Users\\Administrator.USER-20140816TV\\Desktop\\workdemo\\apache-tomcat-6.0.39\\webapps\\store</param-value>
+    	<param-value>D:\\java\\tools\\apache-tomcat-6.0.2\\webapps\\store</param-value>
     </init-param>
 	</servlet>
 	
@@ -140,7 +140,7 @@
     </servlet-class> 
     <init-param>
     	<param-name>uploadPath</param-name>
-    	<param-value>C:\\Users\\Administrator.USER-20140816TV\\Desktop\\workdemo\\apache-tomcat-6.0.39\\webapps\\store</param-value>
+    	<param-value>D:\\java\\tools\\apache-tomcat-6.0.2\\webapps\\store</param-value>
     </init-param>
 	</servlet>
 	
@@ -151,7 +151,7 @@
     </servlet-class> 
     <init-param>
     	<param-name>uploadPath</param-name>
-    	<param-value>C:\\Users\\Administrator.USER-20140816TV\\Desktop\\workdemo\\apache-tomcat-6.0.39\\webapps\\store</param-value>
+    	<param-value>D:\\java\\tools\\apache-tomcat-6.0.2\\webapps\\store</param-value>
     </init-param>
 	</servlet>
 	
