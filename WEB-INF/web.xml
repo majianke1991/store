@@ -30,6 +30,11 @@
 	</filter> 
 	
 	<filter>
+	<filter-name>ManageMyStrategyFilter</filter-name>	
+	<filter-class>filter.ManageMyStrategyFilter</filter-class>
+	</filter> 
+	
+	<filter>
 	<filter-name>ActivityDetailFilter</filter-name>	
 	<filter-class>filter.ActivityDetailFilter</filter-class>
 	</filter> 
@@ -97,6 +102,14 @@
 	</filter-mapping>
 	
 	<filter-mapping>
+		<filter-name>ManageMyStrategyFilter</filter-name>
+		<url-pattern>/pages/myAccount/myAccountStrategy.jsp</url-pattern>
+		<url-pattern>/pages/myAccount/myAccount.jsp</url-pattern>
+		<dispatcher>INCLUDE</dispatcher>
+		<dispatcher>REQUEST</dispatcher>
+	</filter-mapping>
+	
+	<filter-mapping>
 		<filter-name>ActivityDetailFilter</filter-name>
 		<url-pattern>/pages/activityDetail.jsp</url-pattern>
 		<url-pattern>/pages/sharingDetail.jsp</url-pattern>
@@ -107,6 +120,10 @@
 	
 	
 	
+  <servlet>
+    <servlet-name>StrategyDeleteServlet</servlet-name>
+    <servlet-class>servlets.StrategyDeleteServlet</servlet-class>
+	</servlet>
   <servlet>
     <servlet-name>LoginServlet</servlet-name>
     <servlet-class>servlets.LoginServlet</servlet-class>
@@ -128,7 +145,7 @@
     </servlet-class> 
     <init-param>
     	<param-name>uploadPath</param-name>
-    	<param-value>D:\\java\\tools\\apache-tomcat-6.0.2\\webapps\\store</param-value>
+    	<param-value>C:\\Users\\Administrator.USER-20140816TV\\Desktop\\workdemo\\apache-tomcat-6.0.39\\webapps\\store</param-value>
     </init-param>
 	</servlet>
 	
@@ -140,7 +157,7 @@
     </servlet-class> 
     <init-param>
     	<param-name>uploadPath</param-name>
-    	<param-value>D:\\java\\tools\\apache-tomcat-6.0.2\\webapps\\store</param-value>
+    	<param-value>C:\\Users\\Administrator.USER-20140816TV\\Desktop\\workdemo\\apache-tomcat-6.0.39\\webapps\\store</param-value>
     </init-param>
 	</servlet>
 	
@@ -151,7 +168,7 @@
     </servlet-class> 
     <init-param>
     	<param-name>uploadPath</param-name>
-    	<param-value>D:\\java\\tools\\apache-tomcat-6.0.2\\webapps\\store</param-value>
+    	<param-value>C:\\Users\\Administrator.USER-20140816TV\\Desktop\\workdemo\\apache-tomcat-6.0.39\\webapps\\store</param-value>
     </init-param>
 	</servlet>
 	
@@ -198,6 +215,10 @@
  <servlet-mapping>
     <servlet-name>RegsistServlet</servlet-name>
     <url-pattern>/registS</url-pattern>
+  </servlet-mapping>
+ <servlet-mapping>
+    <servlet-name>StrategyDeleteServlet</servlet-name>
+    <url-pattern>/StrategyDeleteServlet</url-pattern>
   </servlet-mapping>
   
   

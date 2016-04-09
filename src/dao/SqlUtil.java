@@ -9,6 +9,7 @@ import java.sql.Statement;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.List;
 
 import utils.CommonUtil;
 import beans.Gonglue;
@@ -27,9 +28,52 @@ public class SqlUtil {
 		return DriverManager.getConnection(
 				"jdbc:oracle:thin:@localhost:1521:orcl", "hehe", "hehe");
 	}
-	
-	public void updateProfile(Profile profile,long phoneNum) throws SQLException{
-		
+
+	public void delGonglueById(String id) {
+		Connection conn;
+		try {
+			conn = getConnection();
+			String sql = "delete from gonglue where id =? ";
+			PreparedStatement statement = conn.prepareStatement(sql);
+			statement.setString(1, id);
+			statement.execute(sql);
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+	}
+
+	public List<Gonglue> getGonglueByUser(long phoneNum) {
+
+		Connection conn;
+		ArrayList<Gonglue> gonglues = new ArrayList<Gonglue>();
+		try {
+			conn = getConnection();
+			String sql = "select * from gonglue where phoneNum =? ";
+			PreparedStatement statement = conn.prepareStatement(sql);
+			statement.setLong(1, phoneNum);
+			ResultSet rs = statement.executeQuery();
+			while (rs.next()) {
+				int rowNum = rs.getRow();
+				Gonglue gonglue = new Gonglue();
+				gonglue.setPhoneNum(rs.getLong("phoneNum"));
+				gonglue.setTitle(rs.getString("title"));
+				gonglue.setText(rs.getString("text"));
+				gonglue.setImage_path(rs.getString("image_path"));
+				gonglue.setId(rs.getString("id"));
+				gonglue.setAuthor(rs.getString("author_name"));
+				gonglue.setDate(rs.getString("create_data"));
+				gonglues.add(gonglue);
+			}
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return gonglues;
+	}
+
+	public void updateProfile(Profile profile, long phoneNum)
+			throws SQLException {
+
 		Connection conn = getConnection();
 		String sql = "update profile set phoneNum =?,name=?,password=?,school=? where phoneNum = ? ";
 		PreparedStatement statement = conn.prepareStatement(sql);
@@ -40,7 +84,7 @@ public class SqlUtil {
 		statement.setLong(5, phoneNum);
 		statement.executeUpdate();
 	}
-	
+
 	public Share createShare(Share share) throws SQLException {
 		Connection conn = getConnection();
 		String sql = "insert into sharing values (?,?,?,?,?,?,?)";
@@ -61,7 +105,7 @@ public class SqlUtil {
 		share.setCreation_date(date);
 		return share;
 	}
-	
+
 	public HD createHD(HD hd) throws SQLException {
 		Connection conn = getConnection();
 		String sql = "insert into HD values (?,?,?,?,?,?,?,?)";
@@ -79,12 +123,12 @@ public class SqlUtil {
 		statement.setString(7, hd.getDescription());
 		statement.setString(8, date);
 		statement.executeUpdate();
-		
+
 		hd.setCreation_date(date);
 		hd.setId(id);
 		return hd;
 	}
-	
+
 	public void createUser(Profile profile) throws SQLException {
 		Connection conn = getConnection();
 		String sql = "insert into profile values (?,?,?,?)";
@@ -96,7 +140,7 @@ public class SqlUtil {
 		statement.executeUpdate();
 	}
 
-	public Profile findUser(Long phoneNum ,String password) throws SQLException {
+	public Profile findUser(Long phoneNum, String password) throws SQLException {
 		Connection conn = getConnection();
 		String sql = "select * from profile where phoneNum = ? AND password=?";
 		PreparedStatement statement = conn.prepareStatement(sql);
@@ -119,9 +163,9 @@ public class SqlUtil {
 		Connection conn = getConnection();
 		String sql = "insert into gonglue values (?,?,?,?,?,?,?)";
 		PreparedStatement statement = conn.prepareStatement(sql);
-		
+
 		Calendar cal = Calendar.getInstance();
-		
+
 		SimpleDateFormat datef = new SimpleDateFormat("MM/dd/yyyy");
 		String date = datef.format(cal.getTime());
 		String id = CommonUtil.generateId("gl");
@@ -135,7 +179,7 @@ public class SqlUtil {
 		statement.setString(6, date);
 		statement.setString(7, gl.getAuthor());
 		statement.executeUpdate();
-		
+
 		return gl;
 	}
 
@@ -146,7 +190,7 @@ public class SqlUtil {
 		ResultSet rs = statement.executeQuery();
 		ArrayList<Gonglue> gonglues = new ArrayList<Gonglue>();
 		while (rs.next()) {
-		
+
 			int rowNum = rs.getRow();
 			Gonglue gonglue = new Gonglue();
 			gonglue.setPhoneNum(rs.getLong("phoneNum"));
@@ -160,7 +204,7 @@ public class SqlUtil {
 		}
 		return gonglues;
 	}
-	
+
 	public ArrayList<HD> findALLHD() throws SQLException {
 		Connection conn = getConnection();
 		String sql = "select * from HD";
@@ -183,7 +227,7 @@ public class SqlUtil {
 		}
 		return hds;
 	}
-	
+
 	public ArrayList<Share> findALLShare() throws SQLException {
 		Connection conn = getConnection();
 		String sql = "select * from sharing";
@@ -191,7 +235,7 @@ public class SqlUtil {
 		ResultSet rs = statement.executeQuery();
 		ArrayList<Share> shs = new ArrayList<Share>();
 		while (rs.next()) {
-			
+
 			int rowNum = rs.getRow();
 			Share sh = new Share();
 			sh.setDescription(rs.getString("description"));

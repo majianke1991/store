@@ -6,6 +6,8 @@
 </head>
 <body>
 	<!-- 我的游记   start -->
+	
+	
 					<div class="myStrategy">
 						<p class="myAccount-title">我的游记</p>
 						<div class="myStrategy-detail">
@@ -19,55 +21,15 @@
 									</tr>
 								</thead>
 								<tbody>
+								
+								<c:forEach var="item" items="${requestScope.gonglues }">
 									<tr>
-										<td>2015-10-12</td>
-										<td><a href="#">属于十一月份的毕棚沟</a></td>
+										<td>${item.date }</td>
+										<td><a href="#">${item.title }</a></td>
 										<td>2</td>
-										<td><a class="delete" href="#">删除</a></td>
+										<td><a class="delete" href="#" onclick="delStrategy('${item.id }')">删除</a></td>
 									</tr>
-									
-									<tr>
-										<td>2015-10-12</td>
-										<td><a href="#">属于十一月份的毕棚沟</a></td>
-										<td>2</td>
-										<td><a class="delete" href="#">删除</a></td>
-									</tr>
-									<tr>
-										<td>2015-10-12</td>
-										<td><a href="#">属于十一月份的毕棚沟</a></td>
-										<td>2</td>
-										<td><a class="delete" href="#">删除</a></td>
-									</tr>
-									<tr>
-										<td>2015-10-12</td>
-										<td><a href="#">属于十一月份的毕棚沟</a></td>
-										<td>2</td>
-										<td><a class="delete" href="#">删除</a></td>
-									</tr>
-									<tr>
-										<td>2015-10-12</td>
-										<td><a href="#">属于十一月份的毕棚沟</a></td>
-										<td>2</td>
-										<td><a class="delete" href="#">删除</a></td>
-									</tr>
-									<tr>
-										<td>2015-10-12</td>
-										<td><a href="#">属于十一月份的毕棚沟</a></td>
-										<td>2</td>
-										<td><a class="delete" href="#">删除</a></td>
-									</tr>
-									<tr>
-										<td>2015-10-12</td>
-										<td><a href="#">属于十一月份的毕棚沟</a></td>
-										<td>2</td>
-										<td><a class="delete" href="#">删除</a></td>
-									</tr>
-									<tr>
-										<td>2015-10-12</td>
-										<td><a href="#">属于十一月份的毕棚沟</a></td>
-										<td>2</td>
-										<td><a class="delete" href="#">删除</a></td>
-									</tr>
+								</c:forEach>
 									
 								</tbody>
 							</table>
