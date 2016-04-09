@@ -235,9 +235,10 @@
 				<c:otherwise>
 						<!-- if there is no travelSharing, show like this-->
 						<div class="col-md-12 activity-no-item">暂未举办分享会哦，请友友们耐心等待.</div>
-					</div>
+					
 				</c:otherwise>		
 		</c:choose>
+		</div>
 				</div>
 			</div>
 		</div>
