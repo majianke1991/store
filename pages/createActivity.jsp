@@ -20,16 +20,17 @@
 	<div class="container">
 		<div class="row">
 		
-		<div class="errorMsg">
-			<c:if test="${not empty requestScope.uploadMessage }">
-			${requestScope.uploadMessage }
-			</c:if>
-		</div>
+		
 		
 			<div class="col-md-10 col-md-offset-1">
 				<p class="create-active-title">创建出行活动</p>
 			</div>
 			<div class="col-md-10 col-md-offset-1">
+				<div class="errorMsg">
+					<c:if test="${not empty requestScope.uploadMessage }">
+						<div class="errorMsg-show">！警告：${requestScope.uploadMessage }</div>
+					</c:if>
+				</div>
 				<div class="createActivity">
 				<form id="form1" name="form1" method="post" action="/store/ActivityServlet" enctype="multipart/form-data">
 					<div class="create-activity-back"><a class="btn btn-primary pull-right create-activity-back-btn" href="#">返回</a></div>
@@ -53,7 +54,7 @@
 										<textarea name="description" form="form1"></textarea>
 									</li>
 									<li>
-										<input type="submit" class="btn btn-primary">保存</button>
+										<input type="submit" class="btn btn-primary" value="保存">
 									</li>
 								</ul>
 				</form>

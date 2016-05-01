@@ -9,11 +9,11 @@
 .bg-box .regist-box {
   position: absolute;
   width: 300px;
-  height: 400px;
+  height: 420px;
   left: 50%;
   top: 50%;
   margin-left: -150px;
-  margin-top: -170px;
+  margin-top: -210px;
   background: #fff;
   -webkit-box-shadow: 0 0 5px 5px #666666;
   -moz-box-shadow: 0 0 5px 5px #666666;
@@ -32,10 +32,18 @@
   -moz-border-radius: 3px;
   border-radius: 3px;
 }
+.bg-box .regist-box .errorMsg-show {
+	width: 270px;
+	margin-top: 5px;
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+	font-size: 14px;
+	color: #ce1126;
+}
 .bg-box .regist-box .sure-regist {
   width: 280px;
   height: 30px;
-  line-height: 30px;
   text-align: center;
   letter-spacing: 4px;
   background-color: #666666;

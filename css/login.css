@@ -13,7 +13,7 @@
   left: 50%;
   top: 50%;
   margin-left: -150px;
-  margin-top: -170px;
+  margin-top: -200px;
   background: #fff;
   -webkit-box-shadow: 0 0 5px 5px #666666;
   -moz-box-shadow: 0 0 5px 5px #666666;
@@ -31,6 +31,15 @@
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
+}
+.login .login-box .errorMsg-show {
+	width: 270px;
+	margin-top: 5px;
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+	font-size: 14px;
+	color: #ce1126;
 }
 .login .login-box .sure-login {
   width: 280px;

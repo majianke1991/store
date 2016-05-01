@@ -1,0 +1,80 @@
+@CHARSET "UTF-8";
+@media screen and (max-width: 992px) {
+  .my-navbar .container {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  #my-navbar .my-fun-nav li {
+    border-bottom: 2px solid #fff;
+  }
+  #my-navbar .pull-right {
+    float: left!important;
+  }
+  .carousel-inner .item {
+    width: 100%;
+    height: 280px!important;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+.navbar-header .my-navbar-toggle {
+  margin-top: 20px;
+}
+.navbar-header .navbar-brand {
+  color: #fff;
+  font-size: 40px;
+  font-style: italic;
+  margin-right: 20px;
+  height: 80px;
+  line-height: 40px;
+}
+.part-title {
+  font-size: 40px;
+}
+.my-navbar {
+  /* opacity: 0.5;*/
+  border-radius: 0;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 81px;
+  z-index: 20;
+}
+.my-navbar #my-navbar {
+  background-color: #222;
+}
+.my-navbar #my-navbar .my-fun-nav li:hover {
+  background-color: #275e97;
+}
+.my-navbar #my-navbar .my-fun-nav li:hover a {
+  color: #fff;
+}
+.my-navbar #my-navbar a {
+  color: #fff;
+  font-weight: bold;
+  font-size: 14px;
+  height: 80px;
+  line-height: 40px;
+}
+.my-navbar #my-navbar a:hover {
+  color: #275e97;
+}
+.my-navbar #my-navbar .my-fun-nav li.active a {
+  background-color: #275e97;
+}
+.my-navbar #my-navbar .my-fun-nav li.active a:hover {
+  color: #fff;
+}
+.my-navbar #my-navbar .pull-right li {
+  color: #fff;
+  font-size: 16px;
+}
+.my-navbar #my-navbar .pull-right li a {
+  display: inline-block;
+  padding-left: 3px;
+  padding-right: 3px;
+}

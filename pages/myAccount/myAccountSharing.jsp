@@ -25,7 +25,7 @@
                 <td>女孩穷游世界，超级达人来袭</td>
                 <td>成信院4404</td>
                 <td>
-                    <a href="#" class="jq-sharing-edit">编辑</a>
+                    <!-- <a href="#" class="jq-sharing-edit">编辑</a> -->
                     <a href="#" class="jq-sharing-delete">删除</a>
                 </td>
             </tr>
@@ -34,7 +34,7 @@
                 <td>“疯在旅途，一路向西”第二期旅行分享会</td>
                 <td>成信院4404</td>
                 <td>
-                    <a href="#" class="jq-sharing-edit">编辑</a>
+                    <!-- <a href="#" class="jq-sharing-edit">编辑</a> -->
                     <a href="#" class="jq-sharing-delete">删除</a>
                 </td>
             </tr>
@@ -51,8 +51,11 @@
                 <li><a href="#" aria-label="Next"><span aria-hidden="true">&raquo;</span></a></li> -->
             </ul>
         </nav>
+        
+        
+        
         <!-- 编辑： popup -->
-        <div class="popup-sharing-edit hidden">
+        <!-- <div class="popup-sharing-edit hidden">
             <ul class="popup-sharing-datail">
                 <li><strong>主题：</strong><input type="text" value="毕棚沟---一路向西" required="required"></li>
                 <li>
@@ -65,9 +68,9 @@
                     <input type="text" value="2014/03/15 05:06" class="datetimepicker"/>
                 </li>
                 <li class="item-theme-image"><strong>主题图片：</strong>
-                    <!-- 还没有图片 -->
-                    <!-- <div class="upload-theme-image"><input type="file" accept="image/jpeg,image/gif,image/png">选择文件</div> -->
-                    <!-- 已有图片 -->
+                    还没有图片
+                    <div class="upload-theme-image"><input type="file" accept="image/jpeg,image/gif,image/png">选择文件</div>
+                    已有图片
                     <div class="theme-image">
                         <img src="1.jpg"/>
                         <div class="upload-theme-image"><input type="file" accept="image/jpeg,image/gif,image/png">更换图片</div>
@@ -87,7 +90,7 @@
                     <button class="btn btn-primary pull-right jq-sharing-save">保存</button>
                 </li>
             </ul>
-        </div>
+        </div> -->
     </div>
 </div>
 <!-- 旅行分享会    end -->

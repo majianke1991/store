@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/store/css/plug-css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="/store/css/plug-css/jquery.datetimepicker.css"/>
     <link rel="stylesheet" href="/store/css/base.css"/>
+    <link rel="stylesheet" href="/store/css/header.css"/>
     <link rel="stylesheet" href="/store/css/myAccount.css"/>
     <script type="text/javascript" src="/store/js/jquery-1.11.2.js"></script>
     <!--jquery时间日期插件-->
@@ -21,17 +22,16 @@
 
 </head>
 <body>
+<jsp:include page="/pages/header.jsp"/>
 
-<c:if test="${not empty requestScope.errorMsg }">
-	${requestScope.errorMsg }
-</c:if>
 
 <div class="container">
     <div class="row">
         <div class="col-md-12 col-sm-12 col-xs-12"><!-- 最外层 -->
-            <div class="adverse-img">
-            </div>
             <div class="myAccount">
+            	<c:if test="${not empty requestScope.errorMsg }">
+				${requestScope.errorMsg }
+				</c:if>
 
                 <div class="myAccount-detail">
                     <div class="row">

@@ -5,12 +5,14 @@
     <title>activity plp</title>
     <link rel="stylesheet" href="../css/plug-css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/base.css"/>
+    <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/activity.css">
     <script src="../js/jquery-1.11.2.js"></script>
     <script src="../js/bootstrap.min.js"></script>
     <script type="text/javascript" src="../myjs/global.js"></script>
 </head>
 <body>
+	<jsp:include page="/pages/header.jsp"/>
     <div class="activity">
         <div class="container">
             <div class="row">

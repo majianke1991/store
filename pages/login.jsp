@@ -15,13 +15,9 @@
 	
 </head>
 <body>
-    <div class="login">
-    	debug 
-    	${requestScope.errorMsg }
+    <div class="login">	
         <div class="login-box">
-            <div class="matetrip-logo">
-                <img src="/store/img/2.jpg" alt="">
-            </div>
+        <div class="errorMsg-show">${requestScope.errorMsg }</div>
             <form action="/store/loginS">
             <input type="text" name="phoneNum" placeholder="请输入手机号/名字" required="required">
             <input type="password" name="password" placeholder="请输入密码" required="required">
@@ -29,12 +25,12 @@
             </form>
             <div class="forgetPass">
                 忘记密码？
-                <a href="searchPass.html">找回密码</a>
+                <a href="searchPass.jsp">找回密码</a>
             </div>
             <div class="or">OR</div>
             <div class="toRegist">
                 还没有账号？
-                <a href="pages/regist.jsp">马上去注册</a>
+                <a href="regist.jsp">马上去注册</a>
             </div>
         </div>
     </div>

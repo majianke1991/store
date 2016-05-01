@@ -21,12 +21,12 @@
         </div>
         <div class="collapse navbar-collapse" id="my-navbar">
             <ul class="nav navbar-nav my-fun-nav">
-                <li class="active"><a href="index.html">首页</a></li>
-                <li><a href="javascript:void(0);" onclick="ajaxPageSet('activity.html');">出行活动</a></li>
-                <li><a href="javascript:void(0);" onclick="ajaxPageSet('strategy.html');">达人攻略</a></li>
-                <li><a href="javascript:void(0);" onclick="ajaxPageSet('travelSharing.html');">分享会</a></li>
-                <li><a href="javascript:void(0);" onclick="ajaxPageSet('messageLeave.html');">留言</a></li>
-                <li><a href="javascript:void(0);" onclick="ajaxPageSet('aboutUs.html');">关于我们</a></li>
+                <li class="active"><a href="/store/pages/index.jsp">首页</a></li>
+                <li><a href="/store/pages/activity.jsp">出行活动</a></li>
+                <li><a href="/store/pages/strategy.jsp">达人攻略</a></li>
+                <li><a href="/store/pages/travelSharing.jsp" >分享会</a></li>
+                <li><a href="/store/pages/messageLeave.jsp">留言</a></li>
+                <li><a href="/store/pages/aboutUs.jsp" >关于我们</a></li>
             </ul>
             <ul class="nav navbar-nav pull-right">
 				<c:choose>
@@ -34,7 +34,7 @@
 					<li><a href="/store/pages/login.jsp">登陆</a>/<a href="/store/pages/regist.jsp">注册</a></li>
 					</c:when>
 					<c:otherwise>
-					 <li><a href="javascript:void(0);" onclick="ajaxPageSet('myAccount.html')">${sessionScope.profile.name }</a>/<a href="/store/logoutS">退出</a></li>
+					 <li><a href="/store/pages/myAccount/myAccount.jsp" >${sessionScope.profile.name }</a>/<a href="/store/logoutS">退出</a></li>
 					</c:otherwise>
 				</c:choose>
              

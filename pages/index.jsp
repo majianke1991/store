@@ -53,7 +53,7 @@
 				<div class="row">
 					<div
 						class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-8 col-xs-offset-2">
-						<!--内容部分都用这个尺寸-->
+						<!-- 内容部分都用这个尺寸 -->
 						<h2 class="part-title">关于校园侣行</h2>
 
 						<p class="small">Do you have a specific question, comment or
@@ -91,7 +91,7 @@
 											<div class="activity-img">
 												<img src="../${hd.image_path }" alt="">
 												<div class="activity-isOpen-mark">未开展</div>
-												<a class="activity-theme" href="activityDetail.html">${hd.zhuti }</a>
+												<a class="activity-theme" href="activityDetail.jsp?hId=${hd.id }" target="_blank">${hd.zhuti }</a>
 											</div>
 										</div>
 										<div class="col-md-8">
@@ -116,7 +116,7 @@
 								</c:forEach>
 
 								<div class="showMore">
-									<a class="pull-right" href="activity.html">查看更多出行活动》》</a>
+									<a class="pull-right" href="activity.jsp">查看更多出行活动》》</a>
 								</div>
 
 							</c:when>
@@ -147,10 +147,10 @@
 									<c:forEach var="gonglue" items="${requestScope.gllist }">
 
 										<div class="col-md-5 col-xs-12 one-strategy">
-											<img class="sharePhoto" src="../${gonglue.image_path }" alt="">
+									
 
 											<div class="thumbnail">
-												<img src="../img/12.jpg" alt="通用的占位符缩略图">
+												<img src="../${gonglue.image_path }" alt="通用的占位符缩略图">
 											</div>
 											<div class="caption">
 												<h3>
@@ -163,16 +163,16 @@
 											</div>
 										</div>
 									</c:forEach>
-									<div
-										class="clearfix visible-md-block visible-lg-block visible-sm-block">
+									<div class="clearfix visible-md-block visible-lg-block visible-sm-block">
 										<div class="col-md-12 showMore-strategy">
-											<a class="pull-right" href="activity.html">查看更多攻略》》</a>
+											<a class="pull-right" href="strategy.jsp">查看更多攻略》》</a>
+										</div>
 										</div>
 								</c:when>
 								<c:otherwise>
 									<!-- if there is no strategy, show like this-->
 									<div class="col-md-12 activity-no-item">
-										暂无友友发布攻略<a href="#">我去写攻略》》</a>
+										暂无友友发布攻略<a href="writeStrategy.jsp">我去写攻略》》</a>
 									</div>
 
 								</c:otherwise>
@@ -203,7 +203,7 @@
 							<div class="col-md-10 sharing-party-imgLeft">
 								<article class="article clearfix">
 									<h4>
-										<a href="sharingDetail.html" target="_blank" title="">${share.zhuti }</a>
+										<a href="sharingDetail.jsp?sid=${share.id }" target="_blank" title="">${share.zhuti }</a>
 									</h4>
 									<ul class="img">
 										<li><a href="" target="_blank"> 
@@ -356,6 +356,6 @@
 			</div>
 		</div>
 	</div>
-	</div>
+
 </body>
 </html>

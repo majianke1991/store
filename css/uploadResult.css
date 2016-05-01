@@ -1,0 +1,24 @@
+@CHARSET "UTF-8";
+
+.uploadResult {
+	margin-top: 100px;
+}
+
+.success-strategy-write {
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	background-color: #275e97;
+	color: #fff;
+}
+
+.turn-strategy-page {
+	width: 100%;
+	margin-top: 50px;
+}
+
+.turn-strategy-page a {
+	float: right;
+	color: #275e97;
+}

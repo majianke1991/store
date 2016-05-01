@@ -1,11 +1,119 @@
-.title {
-  width: 100%;
+
+.writeStrategy {
+	width: 100%;
+	margin-top: 100px;
+	margin-bottom: 50px;
 }
-.title .strategy-write-title {
-  width: 100%;
-  margin: 0 auto;
-  height: 50px;
-  resize: none;
-  padding: 3px 1%;
-  overflow-y: auto;
+
+.writeStrategy .strategy-write-bg {
+	width: 100%;
+	height: 350px;
+	background: url('../img/strategy-write_bg.jpg') center center;
+}
+
+.writeStrategy .strategy-write-bg .strategy-head-photo {
+	width: 300px;
+	margin-left: 50px;
+	height: 200px;
+	margin-top: 50px;
+}
+
+.writeStrategy .strategy-write-bg .strategy-head-photo .tip {
+	width: 300px;
+    /* float: left; */
+    position: relative;
+    left: 200px;
+    top: -140px;
+}
+.writeStrategy .strategy-write-bg .strategy-head-photo p:nth-child(1) {
+	font-size: 24px;
+}
+
+.writeStrategy .strategy-write-bg .strategy-head-photo p:nth-child(2) {
+	font-size: 18px;
+	margin-top: 40px;
+}
+
+.upload-head-photo {
+	cursor: pointer;
+    position: relative;
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    line-height: 30px;
+    text-align: center;
+    background-color: #ce1126;
+    color: #fff;
+    margin-top: 10px;
+    background: url('../img/image_add.png') 150px 150px;
+}
+.writeStrategy .strategy-write-bg .strategy-head-photo .head-photo {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+.writeStrategy .strategy-write-bg .strategy-title {
+	width: 500px;
+	margin-left: 50px;
+	height: 40px;
+}
+
+.writeStrategy .strategy-write-bg .strategy-title .title:focus .writeStrategy .strategy-write-bg .strategy-title {
+	border: 2px solid #eee;
+}
+
+.writeStrategy .strategy-write-bg .strategy-title .title {
+	width: 100%;
+	height: 100%;
+	border: none;
+	padding: 5px 10px;
+	background-color: #fff;
+}
+
+.writeStrategy .strategy-content {
+	margin-top: 20px;
+	width: 100%;
+    height: 300px;
+    border: 2px solid #275e97;
+    font-size: 20px;
+	height: 300px;
+}
+
+.writeStrategy .strategy-content .strategy-write-content {
+	width: 100%;
+	height: 100%;
+	border: none;
+	padding: 5px;
+	background-color: #fff;
+	resize: none;
+}
+
+.writeStrategy .save-or-cancel {
+	margin-top: 20px;
+}
+
+.writeStrategy .save-or-cancel .btn {
+	padding: 6px 30px;
+}
+
+.writeStrategy .save-or-cancel .btn-success {
+	float: right;
+}
+
+.errorMessage {
+	position: fixed;
+    left: 0;
+    top: 200px;
+    background-color: #ce1126;
+    width: 200px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
 }

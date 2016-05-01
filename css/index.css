@@ -234,7 +234,10 @@ body .ajaxPage #strategy .one-strategy .sharePhoto {
 }
 body .ajaxPage #strategy .one-strategy .thumbnail img {
   width: 100%;
-  height: 100%;
+  height: 285px;
+}
+body .ajaxPage #strategy .one-strategy .caption p{
+	font-size: 20px;
 }
 body .ajaxPage #strategy .one-strategy:nth-child(odd) {
   float: left;
@@ -271,7 +274,7 @@ body .ajaxPage #travel-sharing-party .one-sharing-party .article:hover {
 }
 body .ajaxPage #travel-sharing-party .one-sharing-party .article h4 {
   float: left;
-  max-width: 460px;
+  min-width: 460px;
 }
 body .ajaxPage #travel-sharing-party .one-sharing-party .article h4 a {
   color: #333;

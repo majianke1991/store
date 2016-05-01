@@ -19,10 +19,25 @@ $(function(){
 
 	//内容介绍---限制字符个数
 	$('.text-length-limit').each(function(){
-		var maxwidth=300;
-		if($(this).text().length > maxwidth){
+		var maxwidth=200;
+		var this_width = $(this).text().length;
+		if(this_width > maxwidth){
 			$(this).text($(this).text().substring(0,maxwidth));
 			$(this).html($(this).html()+'...');
 		}
 	});
+	
+	
+	
+	//header switch class style
+	$('#my-navbar>.my-fun-nav>li').click(function(e){
+        $(this).addClass('active').siblings('li').removeClass('active');
+        //close the $('#my-navbar')
+        $('#my-navbar').fadeToggle();
+    });
+    //make every page's navbar toggle
+    $('.my-navbar-toggle').click(function(){
+        $('#my-navbar').toggle();
+    });
+    
 });
