@@ -59,9 +59,9 @@ function myAccountLoad(url){
 	});
 }
 
-function delHD(id){
+function delHD(id,_this){
 	
-	var current = $(this);
+	var current = $(_this);
 	$.ajax({
 		url:'/store/DeleteHDorShare?hid='+id,
 		type: 'post',
@@ -71,9 +71,9 @@ function delHD(id){
 		}
 	})
 }
-function delShare(id){
+function delShare(id,_this){
 	
-	var current = $(this);
+	var current = $(_this);
 	$.ajax({
 		url:'/store/DeleteHDorShare?sid='+id,
 		type: 'post',

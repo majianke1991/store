@@ -27,7 +27,7 @@
 										<td>${hd.value.zhuti }</td>
 										<td>未开展</td>
 										<td>
-											<a href="javascript:delHD('${hd.value.id}')" class="activity-handle jq-activity-delete">删除</a>
+											<a href="javascript:void(0)" onclick="delHD('${hd.value.id}',this)" class="activity-handle jq-activity-delete">删除</a>
 										</td>
 										</tr>
 									</c:forEach>

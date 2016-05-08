@@ -28,7 +28,7 @@
 		                <td>${share.value.place }</td>
 		                <td>
 		                    <!-- <a href="#" class="jq-sharing-edit">编辑</a> -->
-		                    <a href="javascript:delShare('${share.value.id}')" class="jq-sharing-delete">删除</a>
+		                    <a href="javascript:void(0)" onclick="delShare('${share.value.id}',this)" class="jq-sharing-delete">删除</a>
 		                </td>
            			 </tr>
                 </c:forEach>
