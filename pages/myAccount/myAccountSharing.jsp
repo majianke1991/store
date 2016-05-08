@@ -20,25 +20,19 @@
             </tr>
             </thead>
             <tbody>
-            <tr>
-                <td>2012-12-10晚7:00</td>
-                <td>女孩穷游世界，超级达人来袭</td>
-                <td>成信院4404</td>
-                <td>
-                    <!-- <a href="#" class="jq-sharing-edit">编辑</a> -->
-                    <a href="#" class="jq-sharing-delete">删除</a>
-                </td>
-            </tr>
-            <tr>
-                <td>2012-12-10晚7:00</td>
-                <td>“疯在旅途，一路向西”第二期旅行分享会</td>
-                <td>成信院4404</td>
-                <td>
-                    <!-- <a href="#" class="jq-sharing-edit">编辑</a> -->
-                    <a href="#" class="jq-sharing-delete">删除</a>
-                </td>
-            </tr>
-
+    		<c:if test="${not empty applicationScope.shares  }">
+				<c:forEach var="share" items="${applicationScope.shares }">	
+		            <tr>
+		                <td>${share.value.date }</td>
+		                <td>${share.value.zhuti }</td>
+		                <td>${share.value.place }</td>
+		                <td>
+		                    <!-- <a href="#" class="jq-sharing-edit">编辑</a> -->
+		                    <a href="javascript:delShare('${share.value.id}')" class="jq-sharing-delete">删除</a>
+		                </td>
+           			 </tr>
+                </c:forEach>
+             </c:if>
             </tbody>
         </table>
         <!-- 分页 -->

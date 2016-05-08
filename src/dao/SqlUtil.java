@@ -29,6 +29,31 @@ public class SqlUtil {
 				"jdbc:oracle:thin:@localhost:1521:orcl", "hehe", "hehe");
 	}
 
+	public void delHDById(String id) {
+		Connection conn;
+		try {
+			conn = getConnection();
+			String sql = "delete from HD where id =? ";
+			PreparedStatement statement = conn.prepareStatement(sql);
+			statement.setString(1, id);
+			statement.execute();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+	}
+	public void delShareById(String id) {
+		Connection conn;
+		try {
+			conn = getConnection();
+			String sql = "delete from sharing where id =? ";
+			PreparedStatement statement = conn.prepareStatement(sql);
+			statement.setString(1, id);
+			statement.execute();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+	}
+	
 	public void delGonglueById(String id) {
 		Connection conn;
 		try {

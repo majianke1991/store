@@ -20,15 +20,18 @@
 									</tr>
 								</thead>
 								<tbody>
-									<tr>
-										<td>2012-12-10</td>
-										<td>毕棚沟---一路向西</td>
+								<c:if test="${not empty applicationScope.hds  }">
+									<c:forEach var="hd" items="${applicationScope.hds }">												
+										<tr>
+										<td>${hd.value.from_date }</td>
+										<td>${hd.value.zhuti }</td>
 										<td>未开展</td>
 										<td>
-											<a href="#" class="activity-handle jq-activity-delete">删除</a>
+											<a href="javascript:delHD('${hd.value.id}')" class="activity-handle jq-activity-delete">删除</a>
 										</td>
-									</tr>
-									
+										</tr>
+									</c:forEach>
+								</c:if>		
 								</tbody>
 							</table>
 							<!-- 分页 -->

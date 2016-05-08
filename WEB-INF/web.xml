@@ -179,7 +179,7 @@
     </servlet-class> 
     <init-param>
     	<param-name>uploadPath</param-name>
-    	<param-value>C:\\Users\\Administrator.USER-20140816TV\\Desktop\\workdemo\\apache-tomcat-6.0.39\\webapps\\store</param-value>
+    	<param-value>D:\\work\\apache-tomcat-6.0.39\\webapps\\store</param-value>
     </init-param>
 	</servlet>
 	
@@ -191,7 +191,7 @@
     </servlet-class> 
     <init-param>
     	<param-name>uploadPath</param-name>
-    	<param-value>C:\\Users\\Administrator.USER-20140816TV\\Desktop\\workdemo\\apache-tomcat-6.0.39\\webapps\\store</param-value>
+    	<param-value>D:\\work\\apache-tomcat-6.0.39\\webapps\\store</param-value>
     </init-param>
 	</servlet>
 	
@@ -202,7 +202,7 @@
     </servlet-class> 
     <init-param>
     	<param-name>uploadPath</param-name>
-    	<param-value>C:\\Users\\Administrator.USER-20140816TV\\Desktop\\workdemo\\apache-tomcat-6.0.39\\webapps\\store</param-value>
+    	<param-value>D:\\work\\apache-tomcat-6.0.39\\webapps\\store</param-value>
     </init-param>
 	</servlet>
 	
@@ -220,7 +220,17 @@
     </servlet-class> 
 	</servlet>
 	
+	<servlet>
+    <servlet-name>DeleteHDorShare</servlet-name>
+    <servlet-class>
+      servlets.DeleteHDorShare
+    </servlet-class> 
+	</servlet>
 	
+ <servlet-mapping>
+    <servlet-name>DeleteHDorShare</servlet-name>
+    <url-pattern>/DeleteHDorShare</url-pattern>
+  </servlet-mapping>
 	
  <servlet-mapping>
     <servlet-name>ProfileUpdate</servlet-name>

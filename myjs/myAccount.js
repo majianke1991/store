@@ -58,12 +58,28 @@ function myAccountLoad(url){
 		}
 	});
 }
-//function delStrategy(id){
-//	$.ajax({
-//		url:'/store/StrategyDeleteServlet?id='+id,
-//		type: 'post',
-//		success: function(data){
-//			$('.jq-myAccount-right').html(data);
-//		}
-//	})
-//}
+
+function delHD(id){
+	
+	var current = $(this);
+	$.ajax({
+		url:'/store/DeleteHDorShare?hid='+id,
+		type: 'post',
+		success: function(data){
+			var thisTr = current.parent().parent();
+			thisTr.remove();
+		}
+	})
+}
+function delShare(id){
+	
+	var current = $(this);
+	$.ajax({
+		url:'/store/DeleteHDorShare?sid='+id,
+		type: 'post',
+		success: function(data){
+			var thisTr = current.parent().parent();
+			thisTr.remove();
+		}
+	})
+}
