@@ -3,6 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <title>part: myaccount myStrategy</title>
+<script type="text/javascript" src="/store/js/jquery-1.11.2.js"></script>
+    <script src="/store/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/store/myjs/myAccount.js"></script>
 </head>
 <body>
 	<!-- 我的游记   start -->
@@ -10,6 +13,7 @@
 	
 					<div class="myStrategy">
 						<p class="myAccount-title">我的游记</p>
+						<p class="pull-right"><a href="/store/pages/writeStrategy.jsp" class="btn btn-primary" onclick="">新增游记</a></p>
 						<div class="myStrategy-detail">
 							<table class="strategy-detail-table table table-striped">
 								<thead>
@@ -27,7 +31,7 @@
 										<td>${item.date }</td>
 										<td><a href="#">${item.title }</a></td>
 										<td>2</td>
-										<td><a class="delete" href="#" onclick="delStrategy('${item.id }')">删除</a></td>
+										<td><a class="delete" href="/store/StrategyDeleteServlet?id=${item.id }" >删除</a></td>
 									</tr>
 								</c:forEach>
 									

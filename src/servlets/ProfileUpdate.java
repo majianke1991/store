@@ -62,7 +62,7 @@ public class ProfileUpdate extends HttpServlet {
 				String newP1 = req.getParameter("newPass1");
 				String newP2 = req.getParameter("newPass2");
 				if(CommonUtil.isBlank(currentPass) || CommonUtil.isBlank(newP1) || !newP1.equals(newP2)||!currentPass.equals(profile.getPassword()) ){
-					errorMsg = "ÃÜÂëÎª¿Õ£¬»òÕß²»Æ¥Åä";
+					errorMsg = "å¯†ç ä¸ºç©ºï¼Œæˆ–è€…ä¸åŒ¹é…";
 				}else{
 					profile.setPassword(newP1);
 				}
@@ -71,11 +71,11 @@ public class ProfileUpdate extends HttpServlet {
 			util.updateProfile(profile,oldProfile.getPhoneNum());
 
 		} catch (NumberFormatException e) {
-			errorMsg = "µç»°²»¶Ô";
+			errorMsg = "ç”µè¯ä¸å¯¹";
 		} catch (SQLException e) {
-			errorMsg = "Êı¾İ¿â³ö´íÁË £º " +e.getMessage();
+			errorMsg = "æ•°æ®åº“å‡ºé”™äº† ï¼š " +e.getMessage();
 			if("23000".equals(e.getSQLState())){
-				errorMsg = "Õâ¸öµç»°ÒÑ¾­±»×¢²á¹ıÁË ";
+				errorMsg = "è¿™ä¸ªç”µè¯å·²ç»è¢«æ³¨å†Œè¿‡äº† ";
 			}
 			e.printStackTrace();
 		}

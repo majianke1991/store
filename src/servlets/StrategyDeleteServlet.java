@@ -29,11 +29,12 @@ public class StrategyDeleteServlet extends HttpServlet{
 			throws ServletException, IOException {
 		
 		String id = req.getParameter("id");
+		System.out.println(id);
 		if(!CommonUtil.isBlank(id)){
 			SqlUtil sql = new SqlUtil();
 			sql.delGonglueById(id);
 		}
-		resp.sendRedirect("/store/pages/myAccount/myAccountStrategy.jsp");
+		resp.sendRedirect("/store/pages/myAccount/myAccount.jsp");
 		
 	}
 

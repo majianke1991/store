@@ -36,12 +36,76 @@ public class SqlUtil {
 			String sql = "delete from gonglue where id =? ";
 			PreparedStatement statement = conn.prepareStatement(sql);
 			statement.setString(1, id);
-			statement.execute(sql);
+			statement.execute();
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
 	}
+	//根据gonglueid查询
+	public Gonglue getGonglueById(String id) throws SQLException {
+		Connection conn = getConnection();
+		String sql = "select * from gonglue where ID = ?";
+		PreparedStatement statement = conn.prepareStatement(sql);
+		statement.setString(1, id);
+		ResultSet rs = statement.executeQuery();
+		Gonglue gonglue =new Gonglue();
+		while (rs.next()) {
+			int rowNum = rs.getRow();
+			gonglue.setPhoneNum(rs.getLong("phoneNum"));
+			gonglue.setTitle(rs.getString("title"));
+			gonglue.setText(rs.getString("text"));
+			gonglue.setImage_path(rs.getString("image_path"));
+			gonglue.setId(rs.getString("id"));
+			gonglue.setAuthor(rs.getString("author_name"));
+			gonglue.setDate(rs.getString("create_data"));
+		}
+		return gonglue;
+	}
+	
+	public ArrayList<Share> findALLShare() throws SQLException {
+		Connection conn = getConnection();
+		String sql = "select * from sharing";
+		PreparedStatement statement = conn.prepareStatement(sql);
+		ResultSet rs = statement.executeQuery();
+		ArrayList<Share> shs = new ArrayList<Share>();
+		while (rs.next()) {
 
+			int rowNum = rs.getRow();
+			Share sh = new Share();
+			sh.setDescription(rs.getString("description"));
+			sh.setDate(rs.getString("begin_date"));
+			sh.setId(rs.getString("id"));
+			sh.setImage_path(rs.getString("image_path"));
+			sh.setZhuti(rs.getString("zhuti"));
+			sh.setPlace(rs.getString("place"));
+			sh.setCreation_date(rs.getString("creation_date"));
+			shs.add(sh);
+		}
+		return shs;
+	}
+	
+	public Share findShareById(String id) throws SQLException {
+		Connection conn = getConnection();
+		String sql = "select * from sharing where ID =";
+		PreparedStatement statement = conn.prepareStatement(sql);
+		statement.setString(1, id);
+		ResultSet rs = statement.executeQuery();
+		Share sh = new Share();
+		while (rs.next()) {
+
+			int rowNum = rs.getRow();
+			sh.setDescription(rs.getString("description"));
+			sh.setDate(rs.getString("begin_date"));
+			sh.setId(rs.getString("id"));
+			sh.setImage_path(rs.getString("image_path"));
+			sh.setZhuti(rs.getString("zhuti"));
+			sh.setPlace(rs.getString("place"));
+			sh.setCreation_date(rs.getString("creation_date"));
+		}
+		return sh;
+	}
+	
+	
 	public List<Gonglue> getGonglueByUser(long phoneNum) {
 
 		Connection conn;
@@ -228,25 +292,4 @@ public class SqlUtil {
 		return hds;
 	}
 
-	public ArrayList<Share> findALLShare() throws SQLException {
-		Connection conn = getConnection();
-		String sql = "select * from sharing";
-		PreparedStatement statement = conn.prepareStatement(sql);
-		ResultSet rs = statement.executeQuery();
-		ArrayList<Share> shs = new ArrayList<Share>();
-		while (rs.next()) {
-
-			int rowNum = rs.getRow();
-			Share sh = new Share();
-			sh.setDescription(rs.getString("description"));
-			sh.setDate(rs.getString("begin_date"));
-			sh.setId(rs.getString("id"));
-			sh.setImage_path(rs.getString("image_path"));
-			sh.setZhuti(rs.getString("zhuti"));
-			sh.setPlace(rs.getString("place"));
-			sh.setCreation_date(rs.getString("creation_date"));
-			shs.add(sh);
-		}
-		return shs;
-	}
 }

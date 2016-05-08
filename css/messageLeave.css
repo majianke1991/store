@@ -3,9 +3,7 @@
   padding: 0;
   color: #666;
 }
-body {
-  background-color: #eee;
-}
+
 ul {
   list-style: none;
 }
@@ -149,6 +147,7 @@ body .mes .oneMes .mes-detail .mes-one-reply  .mes-content {
   background-color: #fff;
   color: #666;
   font-size: 12px;
+  border: 1px solid #e3e3e3;
 }
 
 .right-others .one-content li {

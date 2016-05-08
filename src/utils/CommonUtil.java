@@ -70,6 +70,29 @@ public class CommonUtil {
 		return gonglueMap;
 	}
 	
+	public Gonglue getGongluesByIdFromApplication(String id){
+		Gonglue gonglue = new Gonglue();
+		try {
+			SqlUtil untils = new SqlUtil();
+			gonglue = untils.getGonglueById(id);
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return gonglue;
+	}
+	
+	
+	public Share getShareByIdFromApplication(String id){
+		Share share = new Share();
+		try {
+			SqlUtil untils = new SqlUtil();
+			share = untils.findShareById(id);
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return share;
+	}
+	
 	public synchronized void addGonglue(Gonglue gl,ServletContext application){
 		this.getGongluesFromApplication(application).put(gl.getId(), gl);
 	}

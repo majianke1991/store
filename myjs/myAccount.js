@@ -57,14 +57,13 @@ function myAccountLoad(url){
 			$('.jq-myAccount-right').html(data);
 		}
 	});
-
-function delStrategy(id){
-	$.ajax({
-		url:'/store/StrategyDeleteServlet?id='+id,
-		type: 'post',
-		success: function(data){
-			$('.jq-myAccount-right').html(data);
-		}
-	})
 }
-}
+//function delStrategy(id){
+//	$.ajax({
+//		url:'/store/StrategyDeleteServlet?id='+id,
+//		type: 'post',
+//		success: function(data){
+//			$('.jq-myAccount-right').html(data);
+//		}
+//	})
+//}

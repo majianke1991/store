@@ -20,44 +20,17 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-12">
-                    <p class="strategy-title">西岭雪山---你从未见过的白！</p>
-                    <p class="strategy-small-title">本文来自：<span class="strategy-author">唐颖</span><span class="strategy-time">11/18/2015</span></p>
-                    <p class="strategy-more"><a href="strategy.html">>>更多精选攻略</a></p>
+                    <p class="strategy-title">${requestScope.gonglue.title }</p>
+                    <p class="strategy-small-title">本文来自：<span class="strategy-author">${requestScope.gonglue.author }</span><span class="strategy-time">${requestScope.gonglue.date }</span></p>
+                    <p class="strategy-more"><a href="strategy.jsp">>>更多精选攻略</a></p>
+                    <div class="strategy-photo-header">
+                    	<img src="${requestScope.gonglue.image_path }"/>
+                    </div>
                     <div class="strategy-content">
-                        <p class="strategy-text">通过代码优于配置的策略，Gulp 让简单的任务简单，复杂的任务可管理。
-                            通过代码优于配置的策略，Gulp 让简单的任务简单，复杂的任务可管理。
-                            通过代码优于配置的策略，Gulp 让简单的任务简单，复杂的任务可管理。
-                            通过代码优于配置的策略，Gulp 让简单的任务简单，复杂的任务可管理。
-                            通过代码优于配置的策略，Gulp 让简单的任务简单，复杂的任务可管理。
-                            通过代码优于配置的策略，Gulp 让简单的任务简单，复杂的任务可管理。
-                            通过代码优于配置的策略，Gulp 让简单的任务简单，复杂的任务可管理。
-                            通过代码优于配置的策略，Gulp 让简单的任务简单，复杂的任务可管理。
-                            通过代码优于配置的策略，Gulp 让简单的任务简单，复杂的任务可管理。
-                        </p>
-                        <img class="strategy-img" src="../img/3.large.jpg" alt="">
-                        <p class="strategy-text">通过代码优于配置的策略，Gulp 让简单的任务简单，复杂的任务可管理。
-                            通过代码优于配置的策略，Gulp 让简单的任务简单，复杂的任务可管理。
-                            通过代码优于配置的策略，Gulp 让简单的任务简单，复杂的任务可管理。
-                            通过代码优于配置的策略，Gulp 让简单的任务简单，复杂的任务可管理。
-                            通过代码优于配置的策略，Gulp 让简单的任务简单，复杂的任务可管理。
-                            通过代码优于配置的策略，Gulp 让简单的任务简单，复杂的任务可管理。
-                            通过代码优于配置的策略，Gulp 让简单的任务简单，复杂的任务可管理。
-                            通过代码优于配置的策略，Gulp 让简单的任务简单，复杂的任务可管理。
-                            通过代码优于配置的策略，Gulp 让简单的任务简单，复杂的任务可管理。
-                        </p>
-                        <img class="strategy-img" src="../img/4.large.jpg" alt="">
-                        <img class="strategy-img" src="../img/5.large.jpg" alt="">
-                        <p class="strategy-text">通过代码优于配置的策略，Gulp 让简单的任务简单，复杂的任务可管理。
-                            通过代码优于配置的策略，Gulp 让简单的任务简单，复杂的任务可管理。
-                            通过代码优于配置的策略，Gulp 让简单的任务简单，复杂的任务可管理。
-                            通过代码优于配置的策略，Gulp 让简单的任务简单，复杂的任务可管理。
-                            通过代码优于配置的策略，Gulp 让简单的任务简单，复杂的任务可管理。
-                            通过代码优于配置的策略，Gulp 让简单的任务简单，复杂的任务可管理。
-                            通过代码优于配置的策略，Gulp 让简单的任务简单，复杂的任务可管理。
-                            通过代码优于配置的策略，Gulp 让简单的任务简单，复杂的任务可管理。
-                            通过代码优于配置的策略，Gulp 让简单的任务简单，复杂的任务可管理。
-                        </p>
-                        <img class="strategy-img" src="../img/6.large.jpg" alt="">
+                        <p class="strategy-text">
+             ${requestScope.gonglue.text }  
+                    
+                       
                     </div>
                 </div>
             </div>

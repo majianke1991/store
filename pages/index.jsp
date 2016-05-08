@@ -26,23 +26,35 @@
 				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
 				<li data-target="#myCarousel" data-slide-to="1"></li>
 				<li data-target="#myCarousel" data-slide-to="2"></li>
+				<li data-target="#myCarousel" data-slide-to="3"></li>
+				<li data-target="#myCarousel" data-slide-to="4"></li>
 			</ol>
 			<!-- 轮播（Carousel）项目 -->
 			<div class="carousel-inner">
 				<div class="item active">
-					<img src="../img/main1.jpg" alt="First slide">
+					<img src="../img/main1.jpeg" alt="First slide">
 
-					<div class="carousel-caption">标题 1</div>
+					<div class="carousel-caption">有毒少女组：用青春，去台湾撒欢</div>
 				</div>
 				<div class="item">
-					<img src="../img/main2.jpg" alt="Second slide">
+					<img src="../img/main2.jpeg" alt="Second slide">
 
-					<div class="carousel-caption">标题 2</div>
+					<div class="carousel-caption">天堂在上——冰岛粉色极光风暴</div>
 				</div>
 				<div class="item">
-					<img src="../img/2.jpg" alt="Third slide">
+					<img src="../img/main3.jpeg" alt="Third slide">
 
-					<div class="carousel-caption">标题 3</div>
+					<div class="carousel-caption">漂失的童话堡：曼德勒.蒲甘（缅甸）</div>
+				</div>
+				<div class="item">
+					<img src="../img/main4.jpeg" alt="Third slide">
+
+					<div class="carousel-caption">成都｜吃一嘴红油，看漫天美景</div>
+				</div>
+				<div class="item">
+					<img src="../img/main5.jpeg" alt="Third slide">
+
+					<div class="carousel-caption">缪TEAM-|| 明天继续上路 || （川西路上的房车公路片）</div>
 				</div>
 			</div>
 		</div>
@@ -56,17 +68,11 @@
 						<!-- 内容部分都用这个尺寸 -->
 						<h2 class="part-title">关于校园侣行</h2>
 
-						<p class="small">Do you have a specific question, comment or
-							inquiry? Don’t keep it to yourself. Tell us what it is and we’ll
-							show you how to get the answer as quickly as possible.Tell us
-							what it is and we’ll show you how to get the answer as quickly as
-							possible.Tell us what it is and we’ll show you how to get the
-							answer as quickly as possible.Tell us what it is and we’ll show
-							you how to get the answer as quickly as possible.Tell us what it
-							is and we’ll show you how to get the answer as quickly as
-							possible.Tell us what it is and we’ll show you how to get the
-							answer as quickly as possible.Tell us what it is and we’ll show
-							you how to get the answer as quickly as possible.</p>
+						<p class="small">校园侣行(Matetrip)。“侣”,是结伴的意思。“校园侣行”致力于把大学里面更多的旅行爱好者聚集在一起，以自己的方式、
+						自己的能力完成最优的旅行计划，达到旅行交友，拓展视野，提高综合素质能力，锻炼身心，实现爱好者的想法,让旅行成为一项触手可及的课外活动。
+						让更多的大学生爱上生活，爱上旅行。
+						</p>
+						
 					</div>
 				</div>
 			</div>
@@ -87,14 +93,14 @@
 								<c:forEach var="hd" items="${requestScope.hdlist }">
 
 									<div class="row one-activity">
-										<div class="col-md-4 activity-imgLeft">
+										<div class="col-md-3 activity-imgLeft">
 											<div class="activity-img">
-												<img src="../${hd.image_path }" alt="">
-												<div class="activity-isOpen-mark">未开展</div>
+												<a href="activityDetail.jsp?hId=${hd.id }" target="_blank"><img src="../${hd.image_path }" alt=""></a>
+												<!-- <div class="activity-isOpen-mark">未开展</div> -->
 												<a class="activity-theme" href="activityDetail.jsp?hId=${hd.id }" target="_blank">${hd.zhuti }</a>
 											</div>
 										</div>
-										<div class="col-md-8">
+										<div class="col-md-9">
 											<div class="activity-detail">
 												<p class="activity-time">
 													活动时间：<span>${hd.from_date } & ${hd.end_date }</span>
@@ -158,13 +164,13 @@
 												</h3>
 
 												<p>
-													<a href="#">${gonglue.title}</a>
+													<a href="#">${gonglue.title}</a> <!-- need to completement -->
 												</p>
 											</div>
 										</div>
 									</c:forEach>
 									<div class="clearfix visible-md-block visible-lg-block visible-sm-block">
-										<div class="col-md-12 showMore-strategy">
+										<div class="col-md-12 showMore">
 											<a class="pull-right" href="strategy.jsp">查看更多攻略》》</a>
 										</div>
 										</div>
@@ -226,7 +232,7 @@
 						</div>
 						<!--one travel sharing party end-->
 					</c:forEach>
-						<div class="col-md-12 showMore-strategy">
+						<div class="col-md-12 showMore">
 							<a class="pull-right" href="travelSharing.html">查看更多旅行分享会》》</a>
 						</div>
 				</c:when>
@@ -242,7 +248,7 @@
 				</div>
 			</div>
 		</div>
-		<div id="members">
+		<!-- <div id="members">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-10 col-md-offset-1 col-xs-8 col-xs-offset-2">
@@ -305,7 +311,7 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</div> -->
 		<div id="contact">
 			<div class="container">
 				<div class="row">
@@ -334,7 +340,7 @@
 								</p>
 
 								<div class="barcode">
-									<img src="../img/10.jpg" alt="">
+									<img src="../img/QR-code.jpg" alt="">
 								</div>
 							</div>
 						</div>

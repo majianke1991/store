@@ -25,99 +25,37 @@
 					<div class="row">
 							<!--left start-->
 							<div class="col-md-10 ">
-								<!--one travel sharing party start-->
+							<c:forEach var="share" items="${requestScope.shares }">
+                 <!--one travel sharing party start-->
 								<article class="one-sharing-party article clearfix">
 									<h4>
-										<a href="" target="_blank"
-										   title="">“疯在旅途，一路向西”第二期旅行分享会</a>
+										<a href="sharingDetail.jsp?sid=${share.value.id }" target="_blank"
+										   title="">${share.value.zhuti }</a>
 									</h4>
 									<div class="img">
 
-											<a href=""
+											<a href="sharingDetail.jsp?sid=${share.value.id }"
 											   target="_blank">
-												<img src="../img/1.jpg"
+												<img src="${share.value.image_path }"
 													 alt="">
 											</a>
 
 									</div>
 									<p class="brief">
                                     <span class="text-length-limit">
-                                    校园侣行之“疯在旅途，一路向西”主题分享会隆重来袭啦！九寨沟、
-                                    大美甘南、西藏、稻城亚丁等七站的旅途，走走停停，见证世间的大美，一场永不褪
-                                    色的视觉盛宴。你们，是否准备好来一场“疯狂”的旅途？本期将带你们走进西行的神
-                                    奇天堂。再者，本期主题分享会各路达人向你分享不同的出游经验，还你一个最有意
-                                    义的旅行
+                                    
+                                    <br>
+                                    ${share.value.description }
                                 </span>
-										<a href=""
+										<a href="sharingDetail.jsp?sid=${share.value.id }"
 										   target="_blank">[详情]</a>
 									</p>
 									<ul class="info">
-										<li>2015-10-11晚7:30</li>
-										<li>成信院4405</li>
+										<li>${share.value.date }</li>
+										<li>${share.value.place }</li>
 									</ul>
 								</article><!--one travel sharing party end-->
-								<!--one travel sharing party start-->
-								<article class="one-sharing-party article clearfix">
-									<h4>
-										<a href="" target="_blank"
-										   title="">“疯在旅途，一路向西”第二期旅行分享会</a>
-									</h4>
-									<div class="img">
-
-										<a href=""
-										   target="_blank">
-											<img src="../img/1.jpg"
-												 alt="">
-										</a>
-
-									</div>
-									<p class="brief">
-                                    <span class="text-length-limit">
-                                    校园侣行之“疯在旅途，一路向西”主题分享会隆重来袭啦！九寨沟、
-                                    大美甘南、西藏、稻城亚丁等七站的旅途，走走停停，见证世间的大美，一场永不褪
-                                    色的视觉盛宴。你们，是否准备好来一场“疯狂”的旅途？本期将带你们走进西行的神
-                                    奇天堂。再者，本期主题分享会各路达人向你分享不同的出游经验，还你一个最有意
-                                    义的旅行
-                                </span>
-										<a href=""
-										   target="_blank">[详情]</a>
-									</p>
-									<ul class="info">
-										<li>2015-10-11晚7:30</li>
-										<li>成信院4405</li>
-									</ul>
-								</article><!--one travel sharing party end-->
-								<!--one travel sharing party start-->
-								<article class="one-sharing-party article clearfix">
-									<h4>
-										<a href="" target="_blank"
-										   title="">“疯在旅途，一路向西”第二期旅行分享会</a>
-									</h4>
-									<div class="img">
-
-										<a href=""
-										   target="_blank">
-											<img src="../img/1.jpg"
-												 alt="">
-										</a>
-
-									</div>
-									<p class="brief">
-                                    <span class="text-length-limit">
-                                    校园侣行之“疯在旅途，一路向西”主题分享会隆重来袭啦！九寨沟、
-                                    大美甘南、西藏、稻城亚丁等七站的旅途，走走停停，见证世间的大美，一场永不褪
-                                    色的视觉盛宴。你们，是否准备好来一场“疯狂”的旅途？本期将带你们走进西行的神
-                                    奇天堂。再者，本期主题分享会各路达人向你分享不同的出游经验，还你一个最有意
-                                    义的旅行
-                                </span>
-										<a href=""
-										   target="_blank">[详情]</a>
-									</p>
-									<ul class="info">
-										<li>2015-10-11晚7:30</li>
-										<li>成信院4405</li>
-									</ul>
-								</article><!--one travel sharing party end-->
+						</c:forEach>
 						</div>
 						<!--left end-->
 
@@ -129,15 +67,15 @@
 
 							<div class="sharing-img-right col-md-2 hidden-sm hidden-xs">
 								<ul class="sharing-img-one">
-									<li class="one-img"><img src="../img/1.jpg" alt="click to zoom"/></li>
-									<li class="one-img"><img src="../img/2.jpg" alt=""/></li>
-									<li class="one-img"><img src="../img/3.jpg" alt=""/></li>
-									<li class="one-img"><img src="../img/4.jpg" alt=""/></li>
-									<li class="one-img"><img src="../img/4.jpg" alt=""/></li>
-									<li class="one-img"><img src="../img/4.jpg" alt=""/></li>
-									<li class="one-img"><img src="../img/4.jpg" alt=""/></li>
-									<li class="one-img"><img src="../img/4.jpg" alt=""/></li>
-									<li class="one-img"><img src="../img/4.jpg" alt=""/></li>
+									<li class="one-img"><img src="../img/ts1.jpeg" alt="click to zoom"/></li>
+									<li class="one-img"><img src="../img/ts2.jpeg" alt=""/></li>
+									<li class="one-img"><img src="../img/ts3.jpeg" alt=""/></li>
+									<li class="one-img"><img src="../img/ts4.jpeg" alt=""/></li>
+									<li class="one-img"><img src="../img/ts5.jpeg" alt=""/></li>
+									<li class="one-img"><img src="../img/ts6.jpeg" alt=""/></li>
+									<li class="one-img"><img src="../img/ts7.jpeg" alt=""/></li>
+									<li class="one-img"><img src="../img/ts8.jpeg" alt=""/></li>
+									<li class="one-img"><img src="../img/ts9.jpeg" alt=""/></li>
 								</ul>
 								<div class="btn-direction btn-up"> < </div>
 								<div class="btn-direction btn-down">  < </div>
@@ -157,5 +95,6 @@
 			</div>
 		</div>
 	</div>
+	
 </body>
 </html>

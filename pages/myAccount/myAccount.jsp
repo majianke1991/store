@@ -46,9 +46,11 @@
                                         <input type="file" class="hidden"/>
                                     </div>
                                     <div class="myname col-sm-12">
-                                        <a href="#">夏小雨【
-                                            <!-- <span>会员</span> -->
-                                            <span>管理员</span> <!-- 管理员活动发起 -->
+                                        <a href="#">${sessionScope.profile.name }【
+                                        <c:if test="${sessionScope.profile.phoneNum == 123}">
+                                        	<span>管理员</span> <!-- 管理员活动发起 -->
+                                        </c:if>
+                                      
                                             】</a>
                                     </div>
                                 </div>
@@ -58,12 +60,15 @@
                                 </li>
                                 <li><a href="#" onclick="myAccountLoad('/store/pages/myAccount/myAccountProfile.jsp');return false;">我的资料</a>
                                 </li>
-                                <li><a href="#" onclick="myAccountLoad('/store/pages/myAccount/myAccountActivity.jsp');return false;">活动管理</a>
-                                </li>
-                                <!-- 管理员才有 -->
-                                <li><a href="#" onclick="myAccountLoad('/store/pages/myAccount/myAccountSharing.jsp');return false;">旅行分享会</a>
-                                </li>
-                                <!-- 管理员才有 -->
+                                <c:if test="${sessionScope.profile.phoneNum == 123}">
+                                    <li><a href="#" onclick="myAccountLoad('/store/pages/myAccount/myAccountActivity.jsp');return false;">活动管理</a>
+	                                </li>
+	                                <!-- 管理员才有 -->
+	                                <li><a href="#" onclick="myAccountLoad('/store/pages/myAccount/myAccountSharing.jsp');return false;">旅行分享会</a>
+	                                </li>
+	                                <!-- 管理员才有 -->   	
+                                </c:if>
+                                
                             </ul>
                         </div>
                         <!-- left end -->
@@ -74,6 +79,7 @@
                             <!-- 我的游记   start -->
                             <div class="myStrategy">
                                 <p class="myAccount-title">我的游记</p>
+                                <p class="pull-right"><a href="/store/pages/writeStrategy.jsp" class="btn btn-primary" onclick="">新增游记</a></p>
                                 <div class="myStrategy-detail">
                                     <table class="strategy-detail-table table table-striped">
                                         <thead>
@@ -90,7 +96,7 @@
 												<td>${item.date }</td>
 												<td><a href="#">${item.title }</a></td>
 												<td>2</td>
-												<td><a class="delete" href="#" onclick="delStrategy('${item.id }')">删除</a></td>
+												<td><a class="delete" href="/store/StrategyDeleteServlet?id=${item.id }" >删除</a></td>
 											</tr>
 											</c:forEach>
 

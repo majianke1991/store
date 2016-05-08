@@ -333,8 +333,8 @@ body .ajaxPage #travel-sharing-party .one-sharing-party .article .info li {
 
 body .ajaxPage #contact {
   padding: 50px 0;
-  background-color: #275e97;
-  color: #eee;
+  background-color: #fff;
+  color: #666;
 }
 body .ajaxPage #contact .small {
   font-size: 20px;
@@ -386,4 +386,6 @@ body .ajaxPage #copyright ul li:first-child {
   text-indent: 2em;
 }
 
-
+.showMore {
+	margin-top: 10px;
+}

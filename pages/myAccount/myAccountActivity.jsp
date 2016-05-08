@@ -8,7 +8,7 @@
 	<!-- 活动管理   start -->
 					<div class="activity-manage">
 						<p class="myAccount-title">活动管理</p>
-						<p class="pull-right"><a href="createActivity.html" class="btn btn-primary" onclick="">发起活动</a></p>
+						<p class="pull-right"><a href="/store/pages/createActivity.jsp" class="btn btn-primary" onclick="">发起活动</a></p>
 						<div class="activity-manage-detail">
 							<table class="activity-detail-table table table-striped">
 								<thead>

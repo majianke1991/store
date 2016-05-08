@@ -20,6 +20,7 @@ public class LoginServlet extends HttpServlet{
 		
 		String phoneStr = req.getParameter("phoneNum");
 		String password = req.getParameter("password");
+		System.out.println(password);
 		try{
 			long phoneNum = Long.parseLong(phoneStr);
 			ProfileDao dao = new ProfileDao();

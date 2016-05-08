@@ -20,12 +20,15 @@
 .one-strategy-show:hover {
   background-color: #eee;
   border-radius: 5px 5px 0 0;
+  
 }
 
 .one-strategy-show .one-strategy-intro {
   position: relative;
   width: 100%;
   height: 100%;
+  position: relative;
+  overflow: hidden;
 }
 
 .one-strategy-show .one-strategy-intro > a {
@@ -39,6 +42,9 @@
   width:100%;
   height: 200px;
   border-radius: 5px 5px 0 0;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
 .one-strategy-show .one-strategy-intro .strategy-title {
@@ -51,10 +57,11 @@
   background-color: #000;
   opacity: 0.5;
   overflow: hidden;
+  text-align: center;
 }
 
 .one-strategy-show .one-strategy-intro .strategy-title a {
-  color: #275e97;
+  color: #fff;
 }
 
 
