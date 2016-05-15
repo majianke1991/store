@@ -30,14 +30,14 @@ $(function(){
 	
 	
 	//header switch class style
-	$('#my-navbar>.my-fun-nav>li').click(function(e){
-        $(this).addClass('active').siblings('li').removeClass('active');
+	$(document).on('click', '#my-navbar>.my-fun-nav>li', function(){
+		$(this).addClass('active').siblings('li').removeClass('active');
         //close the $('#my-navbar')
         $('#my-navbar').fadeToggle();
-    });
-    //make every page's navbar toggle
-    $('.my-navbar-toggle').click(function(){
-        $('#my-navbar').toggle();
-    });
+	}).on('click','.my-navbar-toggle',function(){//make every page's navbar toggle
+		$('#my-navbar').toggle();
+	});
+    
+   
     
 });

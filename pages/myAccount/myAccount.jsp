@@ -46,12 +46,12 @@
                                         <input type="file" class="hidden"/>
                                     </div>
                                     <div class="myname col-sm-12">
-                                        <a href="#">${sessionScope.profile.name }【
+                                        <a href="#">${sessionScope.profile.name }
                                         <c:if test="${sessionScope.profile.phoneNum == 123}">
-                                        	<span>管理员</span> <!-- 管理员活动发起 -->
+                                        	<span>【管理员】</span> <!-- 管理员活动发起 -->
                                         </c:if>
                                       
-                                            】</a>
+                                            </a>
                                     </div>
                                 </div>
                             </div>

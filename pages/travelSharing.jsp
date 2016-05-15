@@ -36,7 +36,7 @@
 
 											<a href="sharingDetail.jsp?sid=${share.value.id }"
 											   target="_blank">
-												<img src="${share.value.image_path }"
+												<img src="../${share.value.image_path }"
 													 alt="">
 											</a>
 

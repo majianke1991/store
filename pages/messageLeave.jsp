@@ -23,26 +23,29 @@
             <div class="row">
                 <div class="col-md-10 col-md-offset-1">
                     <div class="col-md-10  col-sm-10  col-xs-12">
+                    	<!-- the place to leave message start-->
+                    	<div class="leave-place">
+                    		<textArea class="leave-box" placeholder="尽情滴吐槽我们呗~">
+                    		</textArea>
+                    		<div>
+                    			<button class="btn btn-primary pull-right">留言</button>
+                    		</div>
+                    	</div><!-- the place to leave message end-->
+                    	
+                    	
+                    	
                         <ul class="mes">
+                        
                             <!--one floor-->
                             <li class="oneMes">
                                 <div class="mes-main-title">
                                     <div class="media">
-                                        <div class="media-left">
-                                            <a class="main-img" href="#">
-                                                <img class="media-object" src="../img/10.jpg" alt="" width="100" height="100">
-                                            </a>
-                                        </div>
-                                        <div class="media-body">
+                                        <div class="media-body clearfix">
                                             <p class="mes-name"><a href="">jessietang</a></p>
                                             <p class="time-comment"><span class="time">2012-12-25 07:31</span></p>
                                         </div>
                                     </div>
-
                                     <p class="mes-content">你们这个是个啥呢？我要怎么加入你们呢？？？求指导！</p>
-
-
-
                                     <div class="reply-box">
                                         <input type="text" class="input-box" placeholder="我也来说一句"/>
                                         <div class="about-comment clearfix">
@@ -51,23 +54,13 @@
                                             <button class="publish">发表</button>
                                         </div>
                                     </div>
-
-
                                 </div>
-
-
 
                                 <ul class="mes-detail">
                                     <!--one reply start-->
                                     <li class="mes-one-reply">
                                         <div class="media">
-                                            <div class="media-left">
-                                                <a href="#" class="reply-img">
-                                                    <img class="media-object" src="../img/2.jpg" alt="" >
-                                                </a>
-
-                                            </div>
-                                            <div class="media-body">
+                                            <div class="media-body clearfix">
                                                 <p class="mes-name"><a href="">唐莹</a></p>
                                                 <p class="time-reply"><span class="time">2012-12-25 08:30</span></p>
 
@@ -79,13 +72,7 @@
                                     <!--one reply start-->
                                     <li class="mes-one-reply">
                                         <div class="media">
-                                            <div class="media-left">
-                                                <a href="#" class="reply-img">
-                                                    <img class="media-object" src="../img/2.jpg" alt="" >
-                                                </a>
-
-                                            </div>
-                                            <div class="media-body">
+                                            <div class="media-body clearfix">
                                                 <p class="mes-name"><a href="">珊妹儿</a></p>
                                                 <p class="time-reply"><span class="time">2012-12-25 08:30</span></p>
 
@@ -111,12 +98,7 @@
                             <li class="oneMes">
                                 <div class="mes-main-title">
                                     <div class="media">
-                                        <div class="media-left">
-                                            <a class="main-img" href="#">
-                                                <img class="media-object" src="../img/10.jpg" alt="" width="100" height="100">
-                                            </a>
-                                        </div>
-                                        <div class="media-body">
+                                        <div class="media-body clearfix">
                                             <p class="mes-name"><a href="">jessietang</a></p>
                                             <p class="time-comment"><span class="time">2012-12-25 07:31</span></p>
                                         </div>
@@ -144,13 +126,7 @@
                                     <!--one reply start-->
                                     <li class="mes-one-reply">
                                         <div class="media">
-                                            <div class="media-left">
-                                                <a href="#" class="reply-img">
-                                                    <img class="media-object" src="../img/2.jpg" alt="" >
-                                                </a>
-
-                                            </div>
-                                            <div class="media-body">
+                                            <div class="media-body clearfix">
                                                 <p class="mes-name"><a href="">唐莹</a></p>
                                                 <p class="time-reply"><span class="time">2012-12-25 08:30</span></p>
 
@@ -162,13 +138,7 @@
                                     <!--one reply start-->
                                     <li class="mes-one-reply">
                                         <div class="media">
-                                            <div class="media-left">
-                                                <a href="#" class="reply-img">
-                                                    <img class="media-object" src="../img/2.jpg" alt="" >
-                                                </a>
-
-                                            </div>
-                                            <div class="media-body">
+                                            <div class="media-body clearfix">
                                                 <p class="mes-name"><a href="">珊妹儿</a></p>
                                                 <p class="time-reply"><span class="time">2012-12-25 08:30</span></p>
 
@@ -188,6 +158,21 @@
                         </ul>
 
                     </div>  <!--content all use this size-->
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
                     <div class="right-others col-md-2 col-sm-2 hidden-xs">
                         <ul class="one-content col-md-12">
                             <li>

@@ -24,7 +24,7 @@
                     <p class="strategy-small-title">本文来自：<span class="strategy-author">${requestScope.gonglue.author }</span><span class="strategy-time">${requestScope.gonglue.date }</span></p>
                     <p class="strategy-more"><a href="strategy.jsp">>>更多精选攻略</a></p>
                     <div class="strategy-photo-header">
-                    	<img src="${requestScope.gonglue.image_path }"/>
+                    	<img src="/store/${requestScope.gonglue.image_path }"/>
                     </div>
                     <div class="strategy-content">
                         <p class="strategy-text">

@@ -103,7 +103,7 @@
 										<div class="col-md-9">
 											<div class="activity-detail">
 												<p class="activity-time">
-													活动时间：<span>${hd.from_date } & ${hd.end_date }</span>
+													活动时间：<span>${hd.from_date } 至   ${hd.end_date }</span>
 												</p>
 
 												<p class="activity-budget">
