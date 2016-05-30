@@ -164,7 +164,7 @@
 												</h3>
 
 												<p>
-													<a href="#">${gonglue.title}</a> <!-- need to completement -->
+													<a href="strategyDetail.jsp?glid=${gonglue.id}" target="_blank">${gonglue.title}</a> <!-- need to completement -->
 												</p>
 											</div>
 										</div>

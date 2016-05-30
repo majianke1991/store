@@ -115,6 +115,17 @@ public class CommonUtil {
 		return hdMap;
 	}
 	
+	public HD getActivityByIdFromApplication(String id){
+		HD activity = new HD();
+		try {
+			SqlUtil untils = new SqlUtil();
+			activity = untils.findHDById(id);
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return activity;
+	}
+	
 	
 	public synchronized void addHD(HD hd,ServletContext application){
 		this.getHDFromApplication(application).put(hd.getId(), hd);

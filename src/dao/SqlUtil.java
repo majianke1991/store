@@ -130,6 +130,28 @@ public class SqlUtil {
 		return sh;
 	}
 	
+	public HD findHDById(String id) throws SQLException {
+		Connection conn = getConnection();
+		String sql = "select * from HD where ID =";
+		PreparedStatement statement = conn.prepareStatement(sql);
+		statement.setString(1, id);
+		ResultSet rs = statement.executeQuery();
+		HD hd = new HD();
+		while (rs.next()) {
+
+			int rowNum = rs.getRow();
+			hd.setDescription(rs.getString("description"));
+			hd.setEsltimate(rs.getInt("esltimate"));
+			hd.setFrom_date(rs.getString("from_date"));
+			hd.setId(rs.getString("id"));
+			hd.setImage_path(rs.getString("image_path"));
+			hd.setZhuti(rs.getString("zhuti"));
+			hd.setEnd_date(rs.getString("end_date"));
+			hd.setCreation_date(rs.getString("creation_date"));
+		}
+		return hd;
+	}
+	
 	
 	public List<Gonglue> getGonglueByUser(long phoneNum) {
 
