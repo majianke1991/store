@@ -13,7 +13,7 @@
 	
 					<div class="myStrategy">
 						<p class="myAccount-title">我的游记</p>
-						<p class="pull-right"><a href="/store/pages/writeStrategy.jsp" class="btn btn-primary" onclick="">新增游记</a></p>
+						<p class="pull-right"><a href="/store/pages/writeStrategy.jsp" class="btn btn-primary" target="_blank" onclick="">新增游记</a></p>
 						<div class="myStrategy-detail">
 							<table class="strategy-detail-table table table-striped">
 								<thead>

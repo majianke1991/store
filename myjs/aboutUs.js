@@ -23,4 +23,13 @@ $(function(){
             $('#content').removeClass('col-md-offset-4');
         }
     });
+    
+  //toggle the header style
+    $('#my-navbar>.my-fun-nav>li').each(function(){
+    	var _this = $(this);
+    	var data_id = _this.find('a').attr("data_id");
+    	if(data_id == 'aboutUs'){
+    		_this.addClass('active').siblings('li').removeClass('active');
+    	}
+    });
 });

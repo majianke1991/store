@@ -8,7 +8,7 @@
 <!-- 旅行分享会   start -->
 <div class="activity-manage">
     <p class="myAccount-title">旅行分享会</p>
-    <p class="pull-right"><a href="/store/pages/createSharing.jsp" class="btn btn-primary" onclick="">新建分享会</a></p>
+    <p class="pull-right"><a href="/store/pages/createSharing.jsp" class="btn btn-primary" target="_blank" onclick="">新建分享会</a></p>
     <div class="activity-manage-detail">
         <table class="activity-detail-table table table-striped">
             <thead>

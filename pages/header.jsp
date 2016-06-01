@@ -21,12 +21,12 @@
         </div>
         <div class="collapse navbar-collapse" id="my-navbar">
             <ul class="nav navbar-nav my-fun-nav">
-                <li class="active"><a href="/store/pages/index.jsp">首页</a></li>
-                <li><a href="/store/pages/activity.jsp">出行活动</a></li>
-                <li><a href="/store/pages/strategy.jsp">达人攻略</a></li>
-                <li><a href="/store/pages/travelSharing.jsp" >分享会</a></li>
-                <li><a href="/store/pages/messageLeave.jsp">留言</a></li>
-                <li><a href="/store/pages/aboutUs.jsp" >关于我们</a></li>
+                <li class="active"><a href="/store/pages/index.jsp" data_id="index">首页</a></li>
+                <li><a href="/store/pages/activity.jsp" data_id="activity">出行活动</a></li>
+                <li><a href="/store/pages/strategy.jsp" data_id="strategy">达人攻略</a></li>
+                <li><a href="/store/pages/travelSharing.jsp" data_id="travelSharing">分享会</a></li>
+                <li><a href="/store/pages/messageLeave.jsp" data_id="messageLeave">留言</a></li>
+                <li><a href="/store/pages/aboutUs.jsp" data_id="aboutUs">关于我们</a></li>
             </ul>
             <ul class="nav navbar-nav pull-right">
 				<c:choose>

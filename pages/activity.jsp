@@ -10,6 +10,7 @@
     <script src="../js/jquery-1.11.2.js"></script>
     <script src="../js/bootstrap.min.js"></script>
     <script type="text/javascript" src="../myjs/global.js"></script>
+    <script type="text/javascript" src="../myjs/activity.js"></script>
 </head>
 <body>
 	<jsp:include page="/pages/header.jsp"/>

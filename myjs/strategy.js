@@ -17,4 +17,14 @@ $(function(){
 			},'slow');
 		});
 	});
+	
+	
+	//toggle the header style
+    $('#my-navbar>.my-fun-nav>li').each(function(){
+    	var _this = $(this);
+    	var data_id = _this.find('a').attr("data_id");
+    	if(data_id == 'strategy'){
+    		_this.addClass('active').siblings('li').removeClass('active');
+    	}
+    });
 });
